@@ -1,4 +1,4 @@
-# OrderCloud.ListLineItem
+# OrdercloudJavascriptSdk.ListLineItem
 
 ## Properties
 Name | Type | Description | Notes

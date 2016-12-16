@@ -14,24 +14,24 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/Inventory', 'model/ListInventory', 'model/ListProduct', 'model/ListProductAssignment', 'model/ListVariant', 'model/Product', 'model/ProductAssignment', 'model/Task', 'model/Variant'], factory);
+    define(['ApiClient', 'model/Inventory', 'model/ListInventory', 'model/ListProduct', 'model/ListProductAssignment', 'model/ListVariant', 'model/Product', 'model/ProductAssignment', 'model/Variant'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/Inventory'), require('../model/ListInventory'), require('../model/ListProduct'), require('../model/ListProductAssignment'), require('../model/ListVariant'), require('../model/Product'), require('../model/ProductAssignment'), require('../model/Task'), require('../model/Variant'));
+    module.exports = factory(require('../ApiClient'), require('../model/Inventory'), require('../model/ListInventory'), require('../model/ListProduct'), require('../model/ListProductAssignment'), require('../model/ListVariant'), require('../model/Product'), require('../model/ProductAssignment'), require('../model/Variant'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ProductApi = factory(root.OrderCloud.ApiClient, root.OrderCloud.Inventory, root.OrderCloud.ListInventory, root.OrderCloud.ListProduct, root.OrderCloud.ListProductAssignment, root.OrderCloud.ListVariant, root.OrderCloud.Product, root.OrderCloud.ProductAssignment, root.OrderCloud.Task, root.OrderCloud.Variant);
+    root.OrdercloudJavascriptSdk.ProductApi = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.Inventory, root.OrdercloudJavascriptSdk.ListInventory, root.OrdercloudJavascriptSdk.ListProduct, root.OrdercloudJavascriptSdk.ListProductAssignment, root.OrdercloudJavascriptSdk.ListVariant, root.OrdercloudJavascriptSdk.Product, root.OrdercloudJavascriptSdk.ProductAssignment, root.OrdercloudJavascriptSdk.Variant);
   }
-}(this, function(ApiClient, Inventory, ListInventory, ListProduct, ListProductAssignment, ListVariant, Product, ProductAssignment, Task, Variant) {
+}(this, function(ApiClient, Inventory, ListInventory, ListProduct, ListProductAssignment, ListVariant, Product, ProductAssignment, Variant) {
   'use strict';
 
   /**
    * Product service.
    * @module api/ProductApi
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**
@@ -135,7 +135,7 @@
      * Callback function to receive the result of the deleteAssignment operation.
      * @callback module:api/ProductApi~deleteAssignmentCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/Task} data The data returned by the service call.
+     * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
      */
 
@@ -146,7 +146,6 @@
      * @param {String} opts.userID ID of the user.
      * @param {String} opts.userGroupID ID of the user group.
      * @param {module:api/ProductApi~deleteAssignmentCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/Task}
      */
     this.deleteAssignment = function(buyerID, productID, opts, callback) {
       opts = opts || {};
@@ -179,7 +178,7 @@
       var authNames = ['oauth2'];
       var contentTypes = ['application/json', 'text/plain; charset=utf-8'];
       var accepts = ['application/json'];
-      var returnType = Task;
+      var returnType = null;
 
       return this.apiClient.callApi(
         '/products/{productID}/assignments/{buyerID}', 'DELETE',
@@ -810,14 +809,13 @@
      * Callback function to receive the result of the saveAssignment operation.
      * @callback module:api/ProductApi~saveAssignmentCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/Task} data The data returned by the service call.
+     * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * @param {module:model/ProductAssignment} productAssignment 
      * @param {module:api/ProductApi~saveAssignmentCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/Task}
      */
     this.saveAssignment = function(productAssignment, callback) {
       var postBody = productAssignment;
@@ -840,7 +838,7 @@
       var authNames = ['oauth2'];
       var contentTypes = ['application/json', 'text/plain; charset=utf-8'];
       var accepts = ['application/json'];
-      var returnType = Task;
+      var returnType = null;
 
       return this.apiClient.callApi(
         '/products/assignments', 'POST',

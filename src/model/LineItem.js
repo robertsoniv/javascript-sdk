@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./Address'), require('./LineItemSpec'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.LineItem = factory(root.OrderCloud.ApiClient, root.OrderCloud.Address, root.OrderCloud.LineItemSpec);
+    root.OrdercloudJavascriptSdk.LineItem = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.Address, root.OrdercloudJavascriptSdk.LineItemSpec);
   }
 }(this, function(ApiClient, Address, LineItemSpec) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The LineItem model module.
    * @module model/LineItem
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

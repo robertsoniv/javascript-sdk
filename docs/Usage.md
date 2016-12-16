@@ -1,4 +1,4 @@
-# OrderCloud.Usage
+# OrdercloudJavascriptSdk.Usage
 
 ## Properties
 Name | Type | Description | Notes

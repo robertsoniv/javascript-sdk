@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.Inventory = factory(root.OrderCloud.ApiClient);
+    root.OrdercloudJavascriptSdk.Inventory = factory(root.OrdercloudJavascriptSdk.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The Inventory model module.
    * @module model/Inventory
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

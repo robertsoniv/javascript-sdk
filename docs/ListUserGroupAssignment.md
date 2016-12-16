@@ -1,4 +1,4 @@
-# OrderCloud.ListUserGroupAssignment
+# OrdercloudJavascriptSdk.ListUserGroupAssignment
 
 ## Properties
 Name | Type | Description | Notes

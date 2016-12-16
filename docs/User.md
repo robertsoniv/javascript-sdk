@@ -1,4 +1,4 @@
-# OrderCloud.User
+# OrdercloudJavascriptSdk.User
 
 ## Properties
 Name | Type | Description | Notes

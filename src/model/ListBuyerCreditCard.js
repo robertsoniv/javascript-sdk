@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./BuyerCreditCard'), require('./Meta'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ListBuyerCreditCard = factory(root.OrderCloud.ApiClient, root.OrderCloud.BuyerCreditCard, root.OrderCloud.Meta);
+    root.OrdercloudJavascriptSdk.ListBuyerCreditCard = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.BuyerCreditCard, root.OrdercloudJavascriptSdk.Meta);
   }
 }(this, function(ApiClient, BuyerCreditCard, Meta) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The ListBuyerCreditCard model module.
    * @module model/ListBuyerCreditCard
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

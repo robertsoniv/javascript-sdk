@@ -1,4 +1,4 @@
-# OrderCloud.ListPayment
+# OrdercloudJavascriptSdk.ListPayment
 
 ## Properties
 Name | Type | Description | Notes

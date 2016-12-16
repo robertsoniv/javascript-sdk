@@ -1,4 +1,4 @@
-# OrderCloud.AdminUserGroupApi
+# OrdercloudJavascriptSdk.AdminUserGroupApi
 
 All URIs are relative to *https://api.ordercloud.io/v1*
 
@@ -23,14 +23,14 @@ Method | HTTP request | Description
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.AdminUserGroupApi();
+var apiInstance = new OrdercloudJavascriptSdk.AdminUserGroupApi();
 
 var userGroupID = "userGroupID_example"; // String | ID of the user group.
 
@@ -72,16 +72,16 @@ null (empty response body)
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.AdminUserGroupApi();
+var apiInstance = new OrdercloudJavascriptSdk.AdminUserGroupApi();
 
-var group = new OrderCloud.UserGroup(); // UserGroup | 
+var group = new OrdercloudJavascriptSdk.UserGroup(); // UserGroup | 
 
 
 var callback = function(error, data, response) {
@@ -115,20 +115,20 @@ Name | Type | Description  | Notes
 
 <a name="deleteUserAssignment"></a>
 # **deleteUserAssignment**
-> Task deleteUserAssignment(userGroupID, userID)
+> deleteUserAssignment(userGroupID, userID)
 
 
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.AdminUserGroupApi();
+var apiInstance = new OrdercloudJavascriptSdk.AdminUserGroupApi();
 
 var userGroupID = "userGroupID_example"; // String | ID of the user group.
 
@@ -139,7 +139,7 @@ var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully. Returned data: ' + data);
+    console.log('API called successfully.');
   }
 };
 apiInstance.deleteUserAssignment(userGroupID, userID, callback);
@@ -154,7 +154,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Task**](Task.md)
+null (empty response body)
 
 ### Authorization
 
@@ -173,14 +173,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.AdminUserGroupApi();
+var apiInstance = new OrdercloudJavascriptSdk.AdminUserGroupApi();
 
 var userGroupID = "userGroupID_example"; // String | ID of the user group.
 
@@ -222,14 +222,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.AdminUserGroupApi();
+var apiInstance = new OrdercloudJavascriptSdk.AdminUserGroupApi();
 
 var opts = { 
   'search': "search_example", // String | Word or phrase to search for.
@@ -282,14 +282,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.AdminUserGroupApi();
+var apiInstance = new OrdercloudJavascriptSdk.AdminUserGroupApi();
 
 var opts = { 
   'userGroupID': "userGroupID_example", // String | ID of the user group.
@@ -338,18 +338,18 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.AdminUserGroupApi();
+var apiInstance = new OrdercloudJavascriptSdk.AdminUserGroupApi();
 
 var userGroupID = "userGroupID_example"; // String | ID of the user group.
 
-var group = new OrderCloud.UserGroup(); // UserGroup | 
+var group = new OrdercloudJavascriptSdk.UserGroup(); // UserGroup | 
 
 
 var callback = function(error, data, response) {
@@ -384,29 +384,29 @@ Name | Type | Description  | Notes
 
 <a name="saveUserAssignment"></a>
 # **saveUserAssignment**
-> Task saveUserAssignment(userGroupAssignment)
+> saveUserAssignment(userGroupAssignment)
 
 
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.AdminUserGroupApi();
+var apiInstance = new OrdercloudJavascriptSdk.AdminUserGroupApi();
 
-var userGroupAssignment = new OrderCloud.UserGroupAssignment(); // UserGroupAssignment | 
+var userGroupAssignment = new OrdercloudJavascriptSdk.UserGroupAssignment(); // UserGroupAssignment | 
 
 
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully. Returned data: ' + data);
+    console.log('API called successfully.');
   }
 };
 apiInstance.saveUserAssignment(userGroupAssignment, callback);
@@ -420,7 +420,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Task**](Task.md)
+null (empty response body)
 
 ### Authorization
 
@@ -439,18 +439,18 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.AdminUserGroupApi();
+var apiInstance = new OrdercloudJavascriptSdk.AdminUserGroupApi();
 
 var userGroupID = "userGroupID_example"; // String | ID of the user group.
 
-var group = new OrderCloud.UserGroup(); // UserGroup | 
+var group = new OrdercloudJavascriptSdk.UserGroup(); // UserGroup | 
 
 
 var callback = function(error, data, response) {

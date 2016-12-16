@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./Meta'), require('./SpecOption'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ListSpecOption = factory(root.OrderCloud.ApiClient, root.OrderCloud.Meta, root.OrderCloud.SpecOption);
+    root.OrdercloudJavascriptSdk.ListSpecOption = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.Meta, root.OrdercloudJavascriptSdk.SpecOption);
   }
 }(this, function(ApiClient, Meta, SpecOption) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The ListSpecOption model module.
    * @module model/ListSpecOption
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

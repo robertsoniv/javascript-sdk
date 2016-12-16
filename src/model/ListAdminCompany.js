@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./AdminCompany'), require('./Meta'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ListAdminCompany = factory(root.OrderCloud.ApiClient, root.OrderCloud.AdminCompany, root.OrderCloud.Meta);
+    root.OrdercloudJavascriptSdk.ListAdminCompany = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.AdminCompany, root.OrdercloudJavascriptSdk.Meta);
   }
 }(this, function(ApiClient, AdminCompany, Meta) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The ListAdminCompany model module.
    * @module model/ListAdminCompany
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

@@ -1,4 +1,4 @@
-# OrderCloud.PingResponse
+# OrdercloudJavascriptSdk.PingResponse
 
 ## Properties
 Name | Type | Description | Notes

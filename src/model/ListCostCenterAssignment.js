@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./CostCenterAssignment'), require('./Meta'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ListCostCenterAssignment = factory(root.OrderCloud.ApiClient, root.OrderCloud.CostCenterAssignment, root.OrderCloud.Meta);
+    root.OrdercloudJavascriptSdk.ListCostCenterAssignment = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.CostCenterAssignment, root.OrdercloudJavascriptSdk.Meta);
   }
 }(this, function(ApiClient, CostCenterAssignment, Meta) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The ListCostCenterAssignment model module.
    * @module model/ListCostCenterAssignment
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

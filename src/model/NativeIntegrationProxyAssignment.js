@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.NativeIntegrationProxyAssignment = factory(root.OrderCloud.ApiClient);
+    root.OrdercloudJavascriptSdk.NativeIntegrationProxyAssignment = factory(root.OrdercloudJavascriptSdk.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The NativeIntegrationProxyAssignment model module.
    * @module model/NativeIntegrationProxyAssignment
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

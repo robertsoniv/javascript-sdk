@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.User = factory(root.OrderCloud.ApiClient);
+    root.OrdercloudJavascriptSdk.User = factory(root.OrdercloudJavascriptSdk.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The User model module.
    * @module model/User
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

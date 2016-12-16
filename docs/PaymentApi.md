@@ -1,4 +1,4 @@
-# OrderCloud.PaymentApi
+# OrdercloudJavascriptSdk.PaymentApi
 
 All URIs are relative to *https://api.ordercloud.io/v1*
 
@@ -24,14 +24,14 @@ Method | HTTP request | Description
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.PaymentApi();
+var apiInstance = new OrdercloudJavascriptSdk.PaymentApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
@@ -79,20 +79,20 @@ null (empty response body)
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.PaymentApi();
+var apiInstance = new OrdercloudJavascriptSdk.PaymentApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
 var orderID = "orderID_example"; // String | ID of the order.
 
-var payment = new OrderCloud.Payment(); // Payment | 
+var payment = new OrdercloudJavascriptSdk.Payment(); // Payment | 
 
 
 var callback = function(error, data, response) {
@@ -134,14 +134,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.PaymentApi();
+var apiInstance = new OrdercloudJavascriptSdk.PaymentApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
@@ -149,7 +149,7 @@ var orderID = "orderID_example"; // String | ID of the order.
 
 var paymentID = "paymentID_example"; // String | ID of the payment.
 
-var transaction = new OrderCloud.PaymentTransaction(); // PaymentTransaction | 
+var transaction = new OrdercloudJavascriptSdk.PaymentTransaction(); // PaymentTransaction | 
 
 
 var callback = function(error, data, response) {
@@ -192,14 +192,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.PaymentApi();
+var apiInstance = new OrdercloudJavascriptSdk.PaymentApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
@@ -250,14 +250,14 @@ null (empty response body)
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.PaymentApi();
+var apiInstance = new OrdercloudJavascriptSdk.PaymentApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
@@ -305,14 +305,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.PaymentApi();
+var apiInstance = new OrdercloudJavascriptSdk.PaymentApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
@@ -371,14 +371,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.PaymentApi();
+var apiInstance = new OrdercloudJavascriptSdk.PaymentApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
@@ -386,7 +386,7 @@ var orderID = "orderID_example"; // String | ID of the order.
 
 var paymentID = "paymentID_example"; // String | ID of the payment.
 
-var partialPayment = new OrderCloud.Payment(); // Payment | 
+var partialPayment = new OrdercloudJavascriptSdk.Payment(); // Payment | 
 
 
 var callback = function(error, data, response) {
@@ -429,14 +429,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.PaymentApi();
+var apiInstance = new OrdercloudJavascriptSdk.PaymentApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
@@ -446,7 +446,7 @@ var paymentID = "paymentID_example"; // String | ID of the payment.
 
 var transactionID = "transactionID_example"; // String | ID of the transaction.
 
-var partialTransaction = new OrderCloud.PaymentTransaction(); // PaymentTransaction | 
+var partialTransaction = new OrdercloudJavascriptSdk.PaymentTransaction(); // PaymentTransaction | 
 
 
 var callback = function(error, data, response) {
@@ -490,14 +490,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.PaymentApi();
+var apiInstance = new OrdercloudJavascriptSdk.PaymentApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
@@ -505,7 +505,7 @@ var orderID = "orderID_example"; // String | ID of the order.
 
 var paymentID = "paymentID_example"; // String | ID of the payment.
 
-var payment = new OrderCloud.Payment(); // Payment | 
+var payment = new OrdercloudJavascriptSdk.Payment(); // Payment | 
 
 
 var callback = function(error, data, response) {
@@ -548,14 +548,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.PaymentApi();
+var apiInstance = new OrdercloudJavascriptSdk.PaymentApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
@@ -565,7 +565,7 @@ var paymentID = "paymentID_example"; // String | ID of the payment.
 
 var transactionID = "transactionID_example"; // String | ID of the transaction.
 
-var transaction = new OrderCloud.PaymentTransaction(); // PaymentTransaction | 
+var transaction = new OrdercloudJavascriptSdk.PaymentTransaction(); // PaymentTransaction | 
 
 
 var callback = function(error, data, response) {

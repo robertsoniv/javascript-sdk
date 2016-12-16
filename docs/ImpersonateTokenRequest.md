@@ -1,4 +1,4 @@
-# OrderCloud.ImpersonateTokenRequest
+# OrdercloudJavascriptSdk.ImpersonateTokenRequest
 
 ## Properties
 Name | Type | Description | Notes

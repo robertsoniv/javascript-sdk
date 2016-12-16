@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/ListSpendingAccount'), require('../model/ListSpendingAccountAssignment'), require('../model/SpendingAccount'), require('../model/SpendingAccountAssignment'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.SpendingAccountApi = factory(root.OrderCloud.ApiClient, root.OrderCloud.ListSpendingAccount, root.OrderCloud.ListSpendingAccountAssignment, root.OrderCloud.SpendingAccount, root.OrderCloud.SpendingAccountAssignment);
+    root.OrdercloudJavascriptSdk.SpendingAccountApi = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.ListSpendingAccount, root.OrdercloudJavascriptSdk.ListSpendingAccountAssignment, root.OrdercloudJavascriptSdk.SpendingAccount, root.OrdercloudJavascriptSdk.SpendingAccountAssignment);
   }
 }(this, function(ApiClient, ListSpendingAccount, ListSpendingAccountAssignment, SpendingAccount, SpendingAccountAssignment) {
   'use strict';
@@ -31,7 +31,7 @@
   /**
    * SpendingAccount service.
    * @module api/SpendingAccountApi
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

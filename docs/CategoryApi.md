@@ -1,4 +1,4 @@
-# OrderCloud.CategoryApi
+# OrdercloudJavascriptSdk.CategoryApi
 
 All URIs are relative to *https://api.ordercloud.io/v1*
 
@@ -26,14 +26,14 @@ Method | HTTP request | Description
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.CategoryApi();
+var apiInstance = new OrdercloudJavascriptSdk.CategoryApi();
 
 var catalogID = "catalogID_example"; // String | ID of the catalog.
 
@@ -78,18 +78,18 @@ null (empty response body)
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.CategoryApi();
+var apiInstance = new OrdercloudJavascriptSdk.CategoryApi();
 
 var catalogID = "catalogID_example"; // String | ID of the catalog.
 
-var category = new OrderCloud.Category(); // Category | 
+var category = new OrdercloudJavascriptSdk.Category(); // Category | 
 
 
 var callback = function(error, data, response) {
@@ -130,14 +130,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.CategoryApi();
+var apiInstance = new OrdercloudJavascriptSdk.CategoryApi();
 
 var catalogID = "catalogID_example"; // String | ID of the catalog.
 
@@ -191,14 +191,14 @@ null (empty response body)
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.CategoryApi();
+var apiInstance = new OrdercloudJavascriptSdk.CategoryApi();
 
 var catalogID = "catalogID_example"; // String | ID of the catalog.
 
@@ -246,14 +246,14 @@ null (empty response body)
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.CategoryApi();
+var apiInstance = new OrdercloudJavascriptSdk.CategoryApi();
 
 var catalogID = "catalogID_example"; // String | ID of the catalog.
 
@@ -298,14 +298,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.CategoryApi();
+var apiInstance = new OrdercloudJavascriptSdk.CategoryApi();
 
 var catalogID = "catalogID_example"; // String | ID of the catalog.
 
@@ -363,14 +363,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.CategoryApi();
+var apiInstance = new OrdercloudJavascriptSdk.CategoryApi();
 
 var catalogID = "catalogID_example"; // String | ID of the catalog.
 
@@ -428,14 +428,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.CategoryApi();
+var apiInstance = new OrdercloudJavascriptSdk.CategoryApi();
 
 var catalogID = "catalogID_example"; // String | ID of the catalog.
 
@@ -487,20 +487,20 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.CategoryApi();
+var apiInstance = new OrdercloudJavascriptSdk.CategoryApi();
 
 var catalogID = "catalogID_example"; // String | ID of the catalog.
 
 var categoryID = "categoryID_example"; // String | ID of the category.
 
-var category = new OrderCloud.Category(); // Category | 
+var category = new OrdercloudJavascriptSdk.Category(); // Category | 
 
 
 var callback = function(error, data, response) {
@@ -542,18 +542,18 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.CategoryApi();
+var apiInstance = new OrdercloudJavascriptSdk.CategoryApi();
 
 var catalogID = "catalogID_example"; // String | ID of the catalog.
 
-var categoryAssignment = new OrderCloud.CategoryAssignment(); // CategoryAssignment | 
+var categoryAssignment = new OrdercloudJavascriptSdk.CategoryAssignment(); // CategoryAssignment | 
 
 
 var callback = function(error, data, response) {
@@ -594,18 +594,18 @@ null (empty response body)
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.CategoryApi();
+var apiInstance = new OrdercloudJavascriptSdk.CategoryApi();
 
 var catalogID = "catalogID_example"; // String | ID of the catalog.
 
-var productAssignment = new OrderCloud.CategoryProductAssignment(); // CategoryProductAssignment | 
+var productAssignment = new OrdercloudJavascriptSdk.CategoryProductAssignment(); // CategoryProductAssignment | 
 
 
 var callback = function(error, data, response) {
@@ -646,20 +646,20 @@ null (empty response body)
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.CategoryApi();
+var apiInstance = new OrdercloudJavascriptSdk.CategoryApi();
 
 var catalogID = "catalogID_example"; // String | ID of the catalog.
 
 var categoryID = "categoryID_example"; // String | ID of the category.
 
-var category = new OrderCloud.Category(); // Category | 
+var category = new OrdercloudJavascriptSdk.Category(); // Category | 
 
 
 var callback = function(error, data, response) {

@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./AddressAssignment'), require('./Meta'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ListAddressAssignment = factory(root.OrderCloud.ApiClient, root.OrderCloud.AddressAssignment, root.OrderCloud.Meta);
+    root.OrdercloudJavascriptSdk.ListAddressAssignment = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.AddressAssignment, root.OrdercloudJavascriptSdk.Meta);
   }
 }(this, function(ApiClient, AddressAssignment, Meta) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The ListAddressAssignment model module.
    * @module model/ListAddressAssignment
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

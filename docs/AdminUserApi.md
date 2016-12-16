@@ -1,4 +1,4 @@
-# OrderCloud.AdminUserApi
+# OrdercloudJavascriptSdk.AdminUserApi
 
 All URIs are relative to *https://api.ordercloud.io/v1*
 
@@ -20,14 +20,14 @@ Method | HTTP request | Description
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.AdminUserApi();
+var apiInstance = new OrdercloudJavascriptSdk.AdminUserApi();
 
 var userID = "userID_example"; // String | ID of the user.
 
@@ -69,16 +69,16 @@ null (empty response body)
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.AdminUserApi();
+var apiInstance = new OrdercloudJavascriptSdk.AdminUserApi();
 
-var user = new OrderCloud.User(); // User | 
+var user = new OrdercloudJavascriptSdk.User(); // User | 
 
 
 var callback = function(error, data, response) {
@@ -118,14 +118,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.AdminUserApi();
+var apiInstance = new OrdercloudJavascriptSdk.AdminUserApi();
 
 var userID = "userID_example"; // String | ID of the user.
 
@@ -167,14 +167,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.AdminUserApi();
+var apiInstance = new OrdercloudJavascriptSdk.AdminUserApi();
 
 var opts = { 
   'search': "search_example", // String | Word or phrase to search for.
@@ -227,18 +227,18 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.AdminUserApi();
+var apiInstance = new OrdercloudJavascriptSdk.AdminUserApi();
 
 var userID = "userID_example"; // String | ID of the user.
 
-var user = new OrderCloud.User(); // User | 
+var user = new OrdercloudJavascriptSdk.User(); // User | 
 
 
 var callback = function(error, data, response) {
@@ -279,18 +279,18 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.AdminUserApi();
+var apiInstance = new OrdercloudJavascriptSdk.AdminUserApi();
 
 var userID = "userID_example"; // String | ID of the user.
 
-var user = new OrderCloud.User(); // User | 
+var user = new OrdercloudJavascriptSdk.User(); // User | 
 
 
 var callback = function(error, data, response) {

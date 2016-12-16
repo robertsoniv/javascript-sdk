@@ -1,4 +1,4 @@
-# OrderCloud.CreditCardAssignment
+# OrdercloudJavascriptSdk.CreditCardAssignment
 
 ## Properties
 Name | Type | Description | Notes

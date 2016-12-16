@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.AdminCompany = factory(root.OrderCloud.ApiClient);
+    root.OrdercloudJavascriptSdk.AdminCompany = factory(root.OrdercloudJavascriptSdk.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The AdminCompany model module.
    * @module model/AdminCompany
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

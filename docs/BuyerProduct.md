@@ -1,4 +1,4 @@
-# OrderCloud.BuyerProduct
+# OrdercloudJavascriptSdk.BuyerProduct
 
 ## Properties
 Name | Type | Description | Notes

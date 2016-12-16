@@ -1,4 +1,4 @@
-# OrderCloud.CostCenter
+# OrdercloudJavascriptSdk.CostCenter
 
 ## Properties
 Name | Type | Description | Notes

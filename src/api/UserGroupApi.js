@@ -14,24 +14,24 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/ListUserGroup', 'model/ListUserGroupAssignment', 'model/Task', 'model/UserGroup', 'model/UserGroupAssignment'], factory);
+    define(['ApiClient', 'model/ListUserGroup', 'model/ListUserGroupAssignment', 'model/UserGroup', 'model/UserGroupAssignment'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/ListUserGroup'), require('../model/ListUserGroupAssignment'), require('../model/Task'), require('../model/UserGroup'), require('../model/UserGroupAssignment'));
+    module.exports = factory(require('../ApiClient'), require('../model/ListUserGroup'), require('../model/ListUserGroupAssignment'), require('../model/UserGroup'), require('../model/UserGroupAssignment'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.UserGroupApi = factory(root.OrderCloud.ApiClient, root.OrderCloud.ListUserGroup, root.OrderCloud.ListUserGroupAssignment, root.OrderCloud.Task, root.OrderCloud.UserGroup, root.OrderCloud.UserGroupAssignment);
+    root.OrdercloudJavascriptSdk.UserGroupApi = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.ListUserGroup, root.OrdercloudJavascriptSdk.ListUserGroupAssignment, root.OrdercloudJavascriptSdk.UserGroup, root.OrdercloudJavascriptSdk.UserGroupAssignment);
   }
-}(this, function(ApiClient, ListUserGroup, ListUserGroupAssignment, Task, UserGroup, UserGroupAssignment) {
+}(this, function(ApiClient, ListUserGroup, ListUserGroupAssignment, UserGroup, UserGroupAssignment) {
   'use strict';
 
   /**
    * UserGroup service.
    * @module api/UserGroupApi
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**
@@ -149,7 +149,7 @@
      * Callback function to receive the result of the deleteUserAssignment operation.
      * @callback module:api/UserGroupApi~deleteUserAssignmentCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/Task} data The data returned by the service call.
+     * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
      */
 
@@ -158,7 +158,6 @@
      * @param {String} userGroupID ID of the user group.
      * @param {String} userID ID of the user.
      * @param {module:api/UserGroupApi~deleteUserAssignmentCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/Task}
      */
     this.deleteUserAssignment = function(buyerID, userGroupID, userID, callback) {
       var postBody = null;
@@ -194,7 +193,7 @@
       var authNames = ['oauth2'];
       var contentTypes = ['application/json', 'text/plain; charset=utf-8'];
       var accepts = ['application/json'];
-      var returnType = Task;
+      var returnType = null;
 
       return this.apiClient.callApi(
         '/buyers/{buyerID}/usergroups/{userGroupID}/assignments/{userID}', 'DELETE',
@@ -427,7 +426,7 @@
      * Callback function to receive the result of the saveUserAssignment operation.
      * @callback module:api/UserGroupApi~saveUserAssignmentCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/Task} data The data returned by the service call.
+     * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
      */
 
@@ -435,7 +434,6 @@
      * @param {String} buyerID ID of the buyer.
      * @param {module:model/UserGroupAssignment} userGroupAssignment 
      * @param {module:api/UserGroupApi~saveUserAssignmentCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/Task}
      */
     this.saveUserAssignment = function(buyerID, userGroupAssignment, callback) {
       var postBody = userGroupAssignment;
@@ -464,7 +462,7 @@
       var authNames = ['oauth2'];
       var contentTypes = ['application/json', 'text/plain; charset=utf-8'];
       var accepts = ['application/json'];
-      var returnType = Task;
+      var returnType = null;
 
       return this.apiClient.callApi(
         '/buyers/{buyerID}/usergroups/assignments', 'POST',

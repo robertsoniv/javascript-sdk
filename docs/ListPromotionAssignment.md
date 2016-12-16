@@ -1,4 +1,4 @@
-# OrderCloud.ListPromotionAssignment
+# OrdercloudJavascriptSdk.ListPromotionAssignment
 
 ## Properties
 Name | Type | Description | Notes

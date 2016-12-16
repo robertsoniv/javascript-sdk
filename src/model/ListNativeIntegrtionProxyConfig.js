@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./Meta'), require('./NativeIntegrtionProxyConfig'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ListNativeIntegrtionProxyConfig = factory(root.OrderCloud.ApiClient, root.OrderCloud.Meta, root.OrderCloud.NativeIntegrtionProxyConfig);
+    root.OrdercloudJavascriptSdk.ListNativeIntegrtionProxyConfig = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.Meta, root.OrdercloudJavascriptSdk.NativeIntegrtionProxyConfig);
   }
 }(this, function(ApiClient, Meta, NativeIntegrtionProxyConfig) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The ListNativeIntegrtionProxyConfig model module.
    * @module model/ListNativeIntegrtionProxyConfig
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

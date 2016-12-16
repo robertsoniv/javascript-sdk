@@ -1,4 +1,4 @@
-# OrderCloud.ListSecurityProfile
+# OrdercloudJavascriptSdk.ListSecurityProfile
 
 ## Properties
 Name | Type | Description | Notes

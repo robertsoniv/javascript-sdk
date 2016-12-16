@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./BuyerProduct'), require('./Meta'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ListBuyerProduct = factory(root.OrderCloud.ApiClient, root.OrderCloud.BuyerProduct, root.OrderCloud.Meta);
+    root.OrdercloudJavascriptSdk.ListBuyerProduct = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.BuyerProduct, root.OrdercloudJavascriptSdk.Meta);
   }
 }(this, function(ApiClient, BuyerProduct, Meta) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The ListBuyerProduct model module.
    * @module model/ListBuyerProduct
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

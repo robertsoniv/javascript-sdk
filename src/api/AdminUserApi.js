@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/ListUser'), require('../model/User'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.AdminUserApi = factory(root.OrderCloud.ApiClient, root.OrderCloud.ListUser, root.OrderCloud.User);
+    root.OrdercloudJavascriptSdk.AdminUserApi = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.ListUser, root.OrdercloudJavascriptSdk.User);
   }
 }(this, function(ApiClient, ListUser, User) {
   'use strict';
@@ -31,7 +31,7 @@
   /**
    * AdminUser service.
    * @module api/AdminUserApi
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

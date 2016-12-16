@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./ShipmentItem'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.Shipment = factory(root.OrderCloud.ApiClient, root.OrderCloud.ShipmentItem);
+    root.OrdercloudJavascriptSdk.Shipment = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.ShipmentItem);
   }
 }(this, function(ApiClient, ShipmentItem) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The Shipment model module.
    * @module model/Shipment
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

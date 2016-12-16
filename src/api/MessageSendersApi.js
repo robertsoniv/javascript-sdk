@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/ListMessageCCListenerAssignment'), require('../model/ListMessageSender'), require('../model/ListMessageSenderAssignment'), require('../model/MessageCCListenerAssignment'), require('../model/MessageSender'), require('../model/MessageSenderAssignment'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.MessageSendersApi = factory(root.OrderCloud.ApiClient, root.OrderCloud.ListMessageCCListenerAssignment, root.OrderCloud.ListMessageSender, root.OrderCloud.ListMessageSenderAssignment, root.OrderCloud.MessageCCListenerAssignment, root.OrderCloud.MessageSender, root.OrderCloud.MessageSenderAssignment);
+    root.OrdercloudJavascriptSdk.MessageSendersApi = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.ListMessageCCListenerAssignment, root.OrdercloudJavascriptSdk.ListMessageSender, root.OrdercloudJavascriptSdk.ListMessageSenderAssignment, root.OrdercloudJavascriptSdk.MessageCCListenerAssignment, root.OrdercloudJavascriptSdk.MessageSender, root.OrdercloudJavascriptSdk.MessageSenderAssignment);
   }
 }(this, function(ApiClient, ListMessageCCListenerAssignment, ListMessageSender, ListMessageSenderAssignment, MessageCCListenerAssignment, MessageSender, MessageSenderAssignment) {
   'use strict';
@@ -31,7 +31,7 @@
   /**
    * MessageSenders service.
    * @module api/MessageSendersApi
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

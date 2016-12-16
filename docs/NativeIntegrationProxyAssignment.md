@@ -1,4 +1,4 @@
-# OrderCloud.NativeIntegrationProxyAssignment
+# OrdercloudJavascriptSdk.NativeIntegrationProxyAssignment
 
 ## Properties
 Name | Type | Description | Notes

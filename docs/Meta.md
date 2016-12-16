@@ -1,4 +1,4 @@
-# OrderCloud.Meta
+# OrdercloudJavascriptSdk.Meta
 
 ## Properties
 Name | Type | Description | Notes

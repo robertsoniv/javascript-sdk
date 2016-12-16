@@ -1,4 +1,4 @@
-# OrderCloud.PasswordResetRequest
+# OrdercloudJavascriptSdk.PasswordResetRequest
 
 ## Properties
 Name | Type | Description | Notes

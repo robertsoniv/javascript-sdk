@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./CostCenter'), require('./Meta'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ListCostCenter = factory(root.OrderCloud.ApiClient, root.OrderCloud.CostCenter, root.OrderCloud.Meta);
+    root.OrdercloudJavascriptSdk.ListCostCenter = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.CostCenter, root.OrdercloudJavascriptSdk.Meta);
   }
 }(this, function(ApiClient, CostCenter, Meta) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The ListCostCenter model module.
    * @module model/ListCostCenter
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

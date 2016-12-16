@@ -1,4 +1,4 @@
-# OrderCloud.ListSpendingAccountAssignment
+# OrdercloudJavascriptSdk.ListSpendingAccountAssignment
 
 ## Properties
 Name | Type | Description | Notes

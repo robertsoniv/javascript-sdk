@@ -1,4 +1,4 @@
-# OrderCloud.LineItem
+# OrdercloudJavascriptSdk.LineItem
 
 ## Properties
 Name | Type | Description | Notes

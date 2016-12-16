@@ -1,4 +1,4 @@
-# OrderCloud.PriceScheduleApi
+# OrdercloudJavascriptSdk.PriceScheduleApi
 
 All URIs are relative to *https://api.ordercloud.io/v1*
 
@@ -16,20 +16,20 @@ Method | HTTP request | Description
 
 <a name="callDelete"></a>
 # **callDelete**
-> Task callDelete(priceScheduleID)
+> callDelete(priceScheduleID)
 
 
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.PriceScheduleApi();
+var apiInstance = new OrdercloudJavascriptSdk.PriceScheduleApi();
 
 var priceScheduleID = "priceScheduleID_example"; // String | ID of the price schedule.
 
@@ -38,7 +38,7 @@ var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully. Returned data: ' + data);
+    console.log('API called successfully.');
   }
 };
 apiInstance.callDelete(priceScheduleID, callback);
@@ -52,7 +52,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Task**](Task.md)
+null (empty response body)
 
 ### Authorization
 
@@ -71,16 +71,16 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.PriceScheduleApi();
+var apiInstance = new OrdercloudJavascriptSdk.PriceScheduleApi();
 
-var priceSchedule = new OrderCloud.PriceSchedule(); // PriceSchedule | 
+var priceSchedule = new OrdercloudJavascriptSdk.PriceSchedule(); // PriceSchedule | 
 
 
 var callback = function(error, data, response) {
@@ -114,20 +114,20 @@ Name | Type | Description  | Notes
 
 <a name="deletePriceBreak"></a>
 # **deletePriceBreak**
-> Task deletePriceBreak(priceScheduleID, quantity)
+> deletePriceBreak(priceScheduleID, quantity)
 
 
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.PriceScheduleApi();
+var apiInstance = new OrdercloudJavascriptSdk.PriceScheduleApi();
 
 var priceScheduleID = "priceScheduleID_example"; // String | ID of the price schedule.
 
@@ -138,7 +138,7 @@ var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully. Returned data: ' + data);
+    console.log('API called successfully.');
   }
 };
 apiInstance.deletePriceBreak(priceScheduleID, quantity, callback);
@@ -153,7 +153,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Task**](Task.md)
+null (empty response body)
 
 ### Authorization
 
@@ -172,14 +172,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.PriceScheduleApi();
+var apiInstance = new OrdercloudJavascriptSdk.PriceScheduleApi();
 
 var priceScheduleID = "priceScheduleID_example"; // String | ID of the price schedule.
 
@@ -221,14 +221,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.PriceScheduleApi();
+var apiInstance = new OrdercloudJavascriptSdk.PriceScheduleApi();
 
 var opts = { 
   'search': "search_example", // String | Word or phrase to search for.
@@ -281,18 +281,18 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.PriceScheduleApi();
+var apiInstance = new OrdercloudJavascriptSdk.PriceScheduleApi();
 
 var priceScheduleID = "priceScheduleID_example"; // String | ID of the price schedule.
 
-var priceSchedule = new OrderCloud.PriceSchedule(); // PriceSchedule | 
+var priceSchedule = new OrdercloudJavascriptSdk.PriceSchedule(); // PriceSchedule | 
 
 
 var callback = function(error, data, response) {
@@ -333,18 +333,18 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.PriceScheduleApi();
+var apiInstance = new OrdercloudJavascriptSdk.PriceScheduleApi();
 
 var priceScheduleID = "priceScheduleID_example"; // String | ID of the price schedule.
 
-var priceBreak = new OrderCloud.PriceBreak(); // PriceBreak | 
+var priceBreak = new OrdercloudJavascriptSdk.PriceBreak(); // PriceBreak | 
 
 
 var callback = function(error, data, response) {
@@ -385,18 +385,18 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.PriceScheduleApi();
+var apiInstance = new OrdercloudJavascriptSdk.PriceScheduleApi();
 
 var priceScheduleID = "priceScheduleID_example"; // String | ID of the price schedule.
 
-var priceSchedule = new OrderCloud.PriceSchedule(); // PriceSchedule | 
+var priceSchedule = new OrdercloudJavascriptSdk.PriceSchedule(); // PriceSchedule | 
 
 
 var callback = function(error, data, response) {

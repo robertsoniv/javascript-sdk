@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./PaymentTransaction'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.Payment = factory(root.OrderCloud.ApiClient, root.OrderCloud.PaymentTransaction);
+    root.OrdercloudJavascriptSdk.Payment = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.PaymentTransaction);
   }
 }(this, function(ApiClient, PaymentTransaction) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The Payment model module.
    * @module model/Payment
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

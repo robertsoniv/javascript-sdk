@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/CreditCard'), require('../model/CreditCardAssignment'), require('../model/ListCreditCard'), require('../model/ListCreditCardAssignment'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.CreditCardApi = factory(root.OrderCloud.ApiClient, root.OrderCloud.CreditCard, root.OrderCloud.CreditCardAssignment, root.OrderCloud.ListCreditCard, root.OrderCloud.ListCreditCardAssignment);
+    root.OrdercloudJavascriptSdk.CreditCardApi = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.CreditCard, root.OrdercloudJavascriptSdk.CreditCardAssignment, root.OrdercloudJavascriptSdk.ListCreditCard, root.OrdercloudJavascriptSdk.ListCreditCardAssignment);
   }
 }(this, function(ApiClient, CreditCard, CreditCardAssignment, ListCreditCard, ListCreditCardAssignment) {
   'use strict';
@@ -31,7 +31,7 @@
   /**
    * CreditCard service.
    * @module api/CreditCardApi
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

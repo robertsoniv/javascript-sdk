@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./CatalogAssignment'), require('./Meta'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ListCatalogAssignment = factory(root.OrderCloud.ApiClient, root.OrderCloud.CatalogAssignment, root.OrderCloud.Meta);
+    root.OrdercloudJavascriptSdk.ListCatalogAssignment = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.CatalogAssignment, root.OrdercloudJavascriptSdk.Meta);
   }
 }(this, function(ApiClient, CatalogAssignment, Meta) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The ListCatalogAssignment model module.
    * @module model/ListCatalogAssignment
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

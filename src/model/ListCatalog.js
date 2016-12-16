@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./Catalog'), require('./Meta'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ListCatalog = factory(root.OrderCloud.ApiClient, root.OrderCloud.Catalog, root.OrderCloud.Meta);
+    root.OrdercloudJavascriptSdk.ListCatalog = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.Catalog, root.OrdercloudJavascriptSdk.Meta);
   }
 }(this, function(ApiClient, Catalog, Meta) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The ListCatalog model module.
    * @module model/ListCatalog
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

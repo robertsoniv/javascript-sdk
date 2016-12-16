@@ -1,4 +1,4 @@
-# OrderCloud.ListCreditCard
+# OrdercloudJavascriptSdk.ListCreditCard
 
 ## Properties
 Name | Type | Description | Notes

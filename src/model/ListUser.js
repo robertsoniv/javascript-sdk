@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./Meta'), require('./User'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ListUser = factory(root.OrderCloud.ApiClient, root.OrderCloud.Meta, root.OrderCloud.User);
+    root.OrdercloudJavascriptSdk.ListUser = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.Meta, root.OrdercloudJavascriptSdk.User);
   }
 }(this, function(ApiClient, Meta, User) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The ListUser model module.
    * @module model/ListUser
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

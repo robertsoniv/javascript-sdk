@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.UsageBuyer = factory(root.OrderCloud.ApiClient);
+    root.OrdercloudJavascriptSdk.UsageBuyer = factory(root.OrdercloudJavascriptSdk.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The UsageBuyer model module.
    * @module model/UsageBuyer
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

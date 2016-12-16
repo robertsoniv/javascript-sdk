@@ -1,4 +1,4 @@
-# OrderCloud.ListInventory
+# OrdercloudJavascriptSdk.ListInventory
 
 ## Properties
 Name | Type | Description | Notes

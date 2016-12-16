@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/ListPayment'), require('../model/Payment'), require('../model/PaymentTransaction'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.PaymentApi = factory(root.OrderCloud.ApiClient, root.OrderCloud.ListPayment, root.OrderCloud.Payment, root.OrderCloud.PaymentTransaction);
+    root.OrdercloudJavascriptSdk.PaymentApi = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.ListPayment, root.OrdercloudJavascriptSdk.Payment, root.OrdercloudJavascriptSdk.PaymentTransaction);
   }
 }(this, function(ApiClient, ListPayment, Payment, PaymentTransaction) {
   'use strict';
@@ -31,7 +31,7 @@
   /**
    * Payment service.
    * @module api/PaymentApi
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

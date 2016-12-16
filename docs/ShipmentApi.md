@@ -1,4 +1,4 @@
-# OrderCloud.ShipmentApi
+# OrdercloudJavascriptSdk.ShipmentApi
 
 All URIs are relative to *https://api.ordercloud.io/v1*
 
@@ -22,14 +22,14 @@ Method | HTTP request | Description
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.ShipmentApi();
+var apiInstance = new OrdercloudJavascriptSdk.ShipmentApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
@@ -74,18 +74,18 @@ null (empty response body)
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.ShipmentApi();
+var apiInstance = new OrdercloudJavascriptSdk.ShipmentApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
-var shipment = new OrderCloud.Shipment(); // Shipment | 
+var shipment = new OrdercloudJavascriptSdk.Shipment(); // Shipment | 
 
 
 var callback = function(error, data, response) {
@@ -126,14 +126,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.ShipmentApi();
+var apiInstance = new OrdercloudJavascriptSdk.ShipmentApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
@@ -184,14 +184,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.ShipmentApi();
+var apiInstance = new OrdercloudJavascriptSdk.ShipmentApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
@@ -236,14 +236,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.ShipmentApi();
+var apiInstance = new OrdercloudJavascriptSdk.ShipmentApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
@@ -301,20 +301,20 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.ShipmentApi();
+var apiInstance = new OrdercloudJavascriptSdk.ShipmentApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
 var shipmentID = "shipmentID_example"; // String | ID of the shipment.
 
-var shipment = new OrderCloud.Shipment(); // Shipment | 
+var shipment = new OrdercloudJavascriptSdk.Shipment(); // Shipment | 
 
 
 var callback = function(error, data, response) {
@@ -356,20 +356,20 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.ShipmentApi();
+var apiInstance = new OrdercloudJavascriptSdk.ShipmentApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
 var shipmentID = "shipmentID_example"; // String | ID of the shipment.
 
-var item = new OrderCloud.ShipmentItem(); // ShipmentItem | 
+var item = new OrdercloudJavascriptSdk.ShipmentItem(); // ShipmentItem | 
 
 
 var callback = function(error, data, response) {
@@ -411,20 +411,20 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.ShipmentApi();
+var apiInstance = new OrdercloudJavascriptSdk.ShipmentApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
 var shipmentID = "shipmentID_example"; // String | ID of the shipment.
 
-var shipment = new OrderCloud.Shipment(); // Shipment | 
+var shipment = new OrdercloudJavascriptSdk.Shipment(); // Shipment | 
 
 
 var callback = function(error, data, response) {

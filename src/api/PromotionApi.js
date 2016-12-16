@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/ListPromotion'), require('../model/ListPromotionAssignment'), require('../model/Promotion'), require('../model/PromotionAssignment'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.PromotionApi = factory(root.OrderCloud.ApiClient, root.OrderCloud.ListPromotion, root.OrderCloud.ListPromotionAssignment, root.OrderCloud.Promotion, root.OrderCloud.PromotionAssignment);
+    root.OrdercloudJavascriptSdk.PromotionApi = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.ListPromotion, root.OrdercloudJavascriptSdk.ListPromotionAssignment, root.OrdercloudJavascriptSdk.Promotion, root.OrdercloudJavascriptSdk.PromotionAssignment);
   }
 }(this, function(ApiClient, ListPromotion, ListPromotionAssignment, Promotion, PromotionAssignment) {
   'use strict';
@@ -31,7 +31,7 @@
   /**
    * Promotion service.
    * @module api/PromotionApi
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

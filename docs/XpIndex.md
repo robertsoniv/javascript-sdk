@@ -1,4 +1,4 @@
-# OrderCloud.XpIndex
+# OrdercloudJavascriptSdk.XpIndex
 
 ## Properties
 Name | Type | Description | Notes

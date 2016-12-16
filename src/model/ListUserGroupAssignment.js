@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./Meta'), require('./UserGroupAssignment'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ListUserGroupAssignment = factory(root.OrderCloud.ApiClient, root.OrderCloud.Meta, root.OrderCloud.UserGroupAssignment);
+    root.OrdercloudJavascriptSdk.ListUserGroupAssignment = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.Meta, root.OrdercloudJavascriptSdk.UserGroupAssignment);
   }
 }(this, function(ApiClient, Meta, UserGroupAssignment) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The ListUserGroupAssignment model module.
    * @module model/ListUserGroupAssignment
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

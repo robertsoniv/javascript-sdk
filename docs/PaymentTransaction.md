@@ -1,4 +1,4 @@
-# OrderCloud.PaymentTransaction
+# OrdercloudJavascriptSdk.PaymentTransaction
 
 ## Properties
 Name | Type | Description | Notes

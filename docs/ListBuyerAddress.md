@@ -1,4 +1,4 @@
-# OrderCloud.ListBuyerAddress
+# OrdercloudJavascriptSdk.ListBuyerAddress
 
 ## Properties
 Name | Type | Description | Notes

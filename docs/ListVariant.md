@@ -1,4 +1,4 @@
-# OrderCloud.ListVariant
+# OrdercloudJavascriptSdk.ListVariant
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# OrderCloud.MeApi
+# OrdercloudJavascriptSdk.MeApi
 
 All URIs are relative to *https://api.ordercloud.io/v1*
 
@@ -43,16 +43,16 @@ Method | HTTP request | Description
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.MeApi();
+var apiInstance = new OrdercloudJavascriptSdk.MeApi();
 
-var address = new OrderCloud.BuyerAddress(); // BuyerAddress | 
+var address = new OrdercloudJavascriptSdk.BuyerAddress(); // BuyerAddress | 
 
 
 var callback = function(error, data, response) {
@@ -92,16 +92,16 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.MeApi();
+var apiInstance = new OrdercloudJavascriptSdk.MeApi();
 
-var creditCard = new OrderCloud.BuyerCreditCard(); // BuyerCreditCard | 
+var creditCard = new OrdercloudJavascriptSdk.BuyerCreditCard(); // BuyerCreditCard | 
 
 
 var callback = function(error, data, response) {
@@ -141,14 +141,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.MeApi();
+var apiInstance = new OrdercloudJavascriptSdk.MeApi();
 
 var addressID = "addressID_example"; // String | ID of the address.
 
@@ -190,14 +190,14 @@ null (empty response body)
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.MeApi();
+var apiInstance = new OrdercloudJavascriptSdk.MeApi();
 
 var creditcardID = "creditcardID_example"; // String | ID of the creditcard.
 
@@ -239,14 +239,14 @@ null (empty response body)
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.MeApi();
+var apiInstance = new OrdercloudJavascriptSdk.MeApi();
 
 var callback = function(error, data, response) {
   if (error) {
@@ -282,14 +282,14 @@ This endpoint does not need any parameter.
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.MeApi();
+var apiInstance = new OrdercloudJavascriptSdk.MeApi();
 
 var addressID = "addressID_example"; // String | ID of the address.
 
@@ -331,14 +331,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.MeApi();
+var apiInstance = new OrdercloudJavascriptSdk.MeApi();
 
 var creditcardID = "creditcardID_example"; // String | ID of the creditcard.
 
@@ -380,14 +380,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.MeApi();
+var apiInstance = new OrdercloudJavascriptSdk.MeApi();
 
 var orderID = "orderID_example"; // String | ID of the order.
 
@@ -429,14 +429,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.MeApi();
+var apiInstance = new OrdercloudJavascriptSdk.MeApi();
 
 var productID = "productID_example"; // String | ID of the product.
 
@@ -478,14 +478,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.MeApi();
+var apiInstance = new OrdercloudJavascriptSdk.MeApi();
 
 var promotionID = "promotionID_example"; // String | ID of the promotion.
 
@@ -527,14 +527,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.MeApi();
+var apiInstance = new OrdercloudJavascriptSdk.MeApi();
 
 var productID = "productID_example"; // String | ID of the product.
 
@@ -579,14 +579,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.MeApi();
+var apiInstance = new OrdercloudJavascriptSdk.MeApi();
 
 var spendingAccountID = "spendingAccountID_example"; // String | ID of the spending account.
 
@@ -628,14 +628,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.MeApi();
+var apiInstance = new OrdercloudJavascriptSdk.MeApi();
 
 var opts = { 
   'search': "search_example", // String | Word or phrase to search for.
@@ -688,14 +688,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.MeApi();
+var apiInstance = new OrdercloudJavascriptSdk.MeApi();
 
 var opts = { 
   'depth': "depth_example", // String | Depth of the category.
@@ -752,14 +752,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.MeApi();
+var apiInstance = new OrdercloudJavascriptSdk.MeApi();
 
 var opts = { 
   'search': "search_example", // String | Word or phrase to search for.
@@ -812,14 +812,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.MeApi();
+var apiInstance = new OrdercloudJavascriptSdk.MeApi();
 
 var opts = { 
   'search': "search_example", // String | Word or phrase to search for.
@@ -872,14 +872,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.MeApi();
+var apiInstance = new OrdercloudJavascriptSdk.MeApi();
 
 var opts = { 
   'from': "from_example", // String | Lower bound of date range that the order was created (if outgoing) or submitted (if incoming).
@@ -936,14 +936,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.MeApi();
+var apiInstance = new OrdercloudJavascriptSdk.MeApi();
 
 var opts = { 
   'from': "from_example", // String | Lower bound of date range that the order was created (if outgoing) or submitted (if incoming).
@@ -1000,14 +1000,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.MeApi();
+var apiInstance = new OrdercloudJavascriptSdk.MeApi();
 
 var opts = { 
   'categoryID': "categoryID_example", // String | ID of the category.
@@ -1064,14 +1064,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.MeApi();
+var apiInstance = new OrdercloudJavascriptSdk.MeApi();
 
 var opts = { 
   'search': "search_example", // String | Word or phrase to search for.
@@ -1124,14 +1124,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.MeApi();
+var apiInstance = new OrdercloudJavascriptSdk.MeApi();
 
 var productID = "productID_example"; // String | ID of the product.
 
@@ -1187,14 +1187,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.MeApi();
+var apiInstance = new OrdercloudJavascriptSdk.MeApi();
 
 var opts = { 
   'search': "search_example", // String | Word or phrase to search for.
@@ -1247,14 +1247,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.MeApi();
+var apiInstance = new OrdercloudJavascriptSdk.MeApi();
 
 var opts = { 
   'search': "search_example", // String | Word or phrase to search for.
@@ -1307,16 +1307,16 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.MeApi();
+var apiInstance = new OrdercloudJavascriptSdk.MeApi();
 
-var user = new OrderCloud.User(); // User | 
+var user = new OrdercloudJavascriptSdk.User(); // User | 
 
 
 var callback = function(error, data, response) {
@@ -1356,18 +1356,18 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.MeApi();
+var apiInstance = new OrdercloudJavascriptSdk.MeApi();
 
 var addressID = "addressID_example"; // String | ID of the address.
 
-var address = new OrderCloud.Address(); // Address | 
+var address = new OrdercloudJavascriptSdk.Address(); // Address | 
 
 
 var callback = function(error, data, response) {
@@ -1408,18 +1408,18 @@ null (empty response body)
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.MeApi();
+var apiInstance = new OrdercloudJavascriptSdk.MeApi();
 
 var creditcardID = "creditcardID_example"; // String | ID of the creditcard.
 
-var creditCard = new OrderCloud.CreditCard(); // CreditCard | 
+var creditCard = new OrdercloudJavascriptSdk.CreditCard(); // CreditCard | 
 
 
 var callback = function(error, data, response) {
@@ -1460,16 +1460,16 @@ null (empty response body)
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.MeApi();
+var apiInstance = new OrdercloudJavascriptSdk.MeApi();
 
-var user = new OrderCloud.User(); // User | 
+var user = new OrdercloudJavascriptSdk.User(); // User | 
 
 
 var callback = function(error, data, response) {
@@ -1509,18 +1509,18 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.MeApi();
+var apiInstance = new OrdercloudJavascriptSdk.MeApi();
 
 var addressID = "addressID_example"; // String | ID of the address.
 
-var address = new OrderCloud.BuyerAddress(); // BuyerAddress | 
+var address = new OrdercloudJavascriptSdk.BuyerAddress(); // BuyerAddress | 
 
 
 var callback = function(error, data, response) {
@@ -1561,18 +1561,18 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.MeApi();
+var apiInstance = new OrdercloudJavascriptSdk.MeApi();
 
 var creditcardID = "creditcardID_example"; // String | ID of the creditcard.
 
-var creditCard = new OrderCloud.BuyerCreditCard(); // BuyerCreditCard | 
+var creditCard = new OrdercloudJavascriptSdk.BuyerCreditCard(); // BuyerCreditCard | 
 
 
 var callback = function(error, data, response) {

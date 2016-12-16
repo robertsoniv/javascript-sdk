@@ -1,4 +1,4 @@
-# OrderCloud.SecurityProfileApi
+# OrdercloudJavascriptSdk.SecurityProfileApi
 
 All URIs are relative to *https://api.ordercloud.io/v1*
 
@@ -19,14 +19,14 @@ Method | HTTP request | Description
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.SecurityProfileApi();
+var apiInstance = new OrdercloudJavascriptSdk.SecurityProfileApi();
 
 var securityProfileID = "securityProfileID_example"; // String | ID of the security profile.
 
@@ -76,14 +76,14 @@ null (empty response body)
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.SecurityProfileApi();
+var apiInstance = new OrdercloudJavascriptSdk.SecurityProfileApi();
 
 var securityProfileID = "securityProfileID_example"; // String | ID of the security profile.
 
@@ -125,14 +125,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.SecurityProfileApi();
+var apiInstance = new OrdercloudJavascriptSdk.SecurityProfileApi();
 
 var opts = { 
   'search': "search_example", // String | Word or phrase to search for.
@@ -185,14 +185,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.SecurityProfileApi();
+var apiInstance = new OrdercloudJavascriptSdk.SecurityProfileApi();
 
 var opts = { 
   'buyerID': "buyerID_example", // String | ID of the buyer.
@@ -247,16 +247,16 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.SecurityProfileApi();
+var apiInstance = new OrdercloudJavascriptSdk.SecurityProfileApi();
 
-var assignment = new OrderCloud.SecurityProfileAssignment(); // SecurityProfileAssignment | 
+var assignment = new OrdercloudJavascriptSdk.SecurityProfileAssignment(); // SecurityProfileAssignment | 
 
 
 var callback = function(error, data, response) {

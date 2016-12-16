@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/Address'), require('../model/AddressAssignment'), require('../model/ListAddress'), require('../model/ListAddressAssignment'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.AddressApi = factory(root.OrderCloud.ApiClient, root.OrderCloud.Address, root.OrderCloud.AddressAssignment, root.OrderCloud.ListAddress, root.OrderCloud.ListAddressAssignment);
+    root.OrdercloudJavascriptSdk.AddressApi = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.Address, root.OrdercloudJavascriptSdk.AddressAssignment, root.OrdercloudJavascriptSdk.ListAddress, root.OrdercloudJavascriptSdk.ListAddressAssignment);
   }
 }(this, function(ApiClient, Address, AddressAssignment, ListAddress, ListAddressAssignment) {
   'use strict';
@@ -31,7 +31,7 @@
   /**
    * Address service.
    * @module api/AddressApi
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

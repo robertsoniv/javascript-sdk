@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./Meta'), require('./XpIndex'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ListXpIndex = factory(root.OrderCloud.ApiClient, root.OrderCloud.Meta, root.OrderCloud.XpIndex);
+    root.OrdercloudJavascriptSdk.ListXpIndex = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.Meta, root.OrdercloudJavascriptSdk.XpIndex);
   }
 }(this, function(ApiClient, Meta, XpIndex) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The ListXpIndex model module.
    * @module model/ListXpIndex
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

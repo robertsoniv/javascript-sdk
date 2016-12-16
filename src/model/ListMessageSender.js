@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./MessageSender'), require('./Meta'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ListMessageSender = factory(root.OrderCloud.ApiClient, root.OrderCloud.MessageSender, root.OrderCloud.Meta);
+    root.OrdercloudJavascriptSdk.ListMessageSender = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.MessageSender, root.OrdercloudJavascriptSdk.Meta);
   }
 }(this, function(ApiClient, MessageSender, Meta) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The ListMessageSender model module.
    * @module model/ListMessageSender
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

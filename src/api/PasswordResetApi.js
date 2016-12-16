@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/PasswordReset'), require('../model/PasswordResetRequest'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.PasswordResetApi = factory(root.OrderCloud.ApiClient, root.OrderCloud.PasswordReset, root.OrderCloud.PasswordResetRequest);
+    root.OrdercloudJavascriptSdk.PasswordResetApi = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.PasswordReset, root.OrdercloudJavascriptSdk.PasswordResetRequest);
   }
 }(this, function(ApiClient, PasswordReset, PasswordResetRequest) {
   'use strict';
@@ -31,7 +31,7 @@
   /**
    * PasswordReset service.
    * @module api/PasswordResetApi
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

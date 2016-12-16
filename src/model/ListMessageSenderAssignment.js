@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./MessageSenderAssignment'), require('./Meta'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ListMessageSenderAssignment = factory(root.OrderCloud.ApiClient, root.OrderCloud.MessageSenderAssignment, root.OrderCloud.Meta);
+    root.OrdercloudJavascriptSdk.ListMessageSenderAssignment = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.MessageSenderAssignment, root.OrdercloudJavascriptSdk.Meta);
   }
 }(this, function(ApiClient, MessageSenderAssignment, Meta) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The ListMessageSenderAssignment model module.
    * @module model/ListMessageSenderAssignment
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

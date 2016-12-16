@@ -1,4 +1,4 @@
-# OrderCloud.WebHookRoute
+# OrdercloudJavascriptSdk.WebHookRoute
 
 ## Properties
 Name | Type | Description | Notes

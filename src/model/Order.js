@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./Address'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.Order = factory(root.OrderCloud.ApiClient, root.OrderCloud.Address);
+    root.OrdercloudJavascriptSdk.Order = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.Address);
   }
 }(this, function(ApiClient, Address) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The Order model module.
    * @module model/Order
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

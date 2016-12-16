@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./Inventory'), require('./Meta'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ListInventory = factory(root.OrderCloud.ApiClient, root.OrderCloud.Inventory, root.OrderCloud.Meta);
+    root.OrdercloudJavascriptSdk.ListInventory = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.Inventory, root.OrdercloudJavascriptSdk.Meta);
   }
 }(this, function(ApiClient, Inventory, Meta) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The ListInventory model module.
    * @module model/ListInventory
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

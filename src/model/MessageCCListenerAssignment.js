@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./MessageSenderAssignment'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.MessageCCListenerAssignment = factory(root.OrderCloud.ApiClient, root.OrderCloud.MessageSenderAssignment);
+    root.OrdercloudJavascriptSdk.MessageCCListenerAssignment = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.MessageSenderAssignment);
   }
 }(this, function(ApiClient, MessageSenderAssignment) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The MessageCCListenerAssignment model module.
    * @module model/MessageCCListenerAssignment
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

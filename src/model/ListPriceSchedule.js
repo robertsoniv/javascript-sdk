@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./Meta'), require('./PriceSchedule'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ListPriceSchedule = factory(root.OrderCloud.ApiClient, root.OrderCloud.Meta, root.OrderCloud.PriceSchedule);
+    root.OrdercloudJavascriptSdk.ListPriceSchedule = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.Meta, root.OrdercloudJavascriptSdk.PriceSchedule);
   }
 }(this, function(ApiClient, Meta, PriceSchedule) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The ListPriceSchedule model module.
    * @module model/ListPriceSchedule
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

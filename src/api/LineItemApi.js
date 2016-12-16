@@ -14,24 +14,24 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/Address', 'model/LineItem', 'model/ListLineItem', 'model/Task'], factory);
+    define(['ApiClient', 'model/Address', 'model/LineItem', 'model/ListLineItem'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/Address'), require('../model/LineItem'), require('../model/ListLineItem'), require('../model/Task'));
+    module.exports = factory(require('../ApiClient'), require('../model/Address'), require('../model/LineItem'), require('../model/ListLineItem'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.LineItemApi = factory(root.OrderCloud.ApiClient, root.OrderCloud.Address, root.OrderCloud.LineItem, root.OrderCloud.ListLineItem, root.OrderCloud.Task);
+    root.OrdercloudJavascriptSdk.LineItemApi = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.Address, root.OrdercloudJavascriptSdk.LineItem, root.OrdercloudJavascriptSdk.ListLineItem);
   }
-}(this, function(ApiClient, Address, LineItem, ListLineItem, Task) {
+}(this, function(ApiClient, Address, LineItem, ListLineItem) {
   'use strict';
 
   /**
    * LineItem service.
    * @module api/LineItemApi
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**
@@ -49,7 +49,7 @@
      * Callback function to receive the result of the callDelete operation.
      * @callback module:api/LineItemApi~callDeleteCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/Task} data The data returned by the service call.
+     * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
      */
 
@@ -58,7 +58,6 @@
      * @param {String} orderID ID of the order.
      * @param {String} lineItemID ID of the line item.
      * @param {module:api/LineItemApi~callDeleteCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/Task}
      */
     this.callDelete = function(buyerID, orderID, lineItemID, callback) {
       var postBody = null;
@@ -94,7 +93,7 @@
       var authNames = ['oauth2'];
       var contentTypes = ['application/json', 'text/plain; charset=utf-8'];
       var accepts = ['application/json'];
-      var returnType = Task;
+      var returnType = null;
 
       return this.apiClient.callApi(
         '/buyers/{buyerID}/orders/{orderID}/lineitems/{lineItemID}', 'DELETE',

@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./Meta'), require('./SecurityProfile'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ListSecurityProfile = factory(root.OrderCloud.ApiClient, root.OrderCloud.Meta, root.OrderCloud.SecurityProfile);
+    root.OrdercloudJavascriptSdk.ListSecurityProfile = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.Meta, root.OrdercloudJavascriptSdk.SecurityProfile);
   }
 }(this, function(ApiClient, Meta, SecurityProfile) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The ListSecurityProfile model module.
    * @module model/ListSecurityProfile
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

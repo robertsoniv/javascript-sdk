@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.Promotion = factory(root.OrderCloud.ApiClient);
+    root.OrdercloudJavascriptSdk.Promotion = factory(root.OrdercloudJavascriptSdk.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The Promotion model module.
    * @module model/Promotion
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

@@ -1,4 +1,4 @@
-# OrderCloud.ApprovalRuleApi
+# OrdercloudJavascriptSdk.ApprovalRuleApi
 
 All URIs are relative to *https://api.ordercloud.io/v1*
 
@@ -20,14 +20,14 @@ Method | HTTP request | Description
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.ApprovalRuleApi();
+var apiInstance = new OrdercloudJavascriptSdk.ApprovalRuleApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
@@ -72,18 +72,18 @@ null (empty response body)
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.ApprovalRuleApi();
+var apiInstance = new OrdercloudJavascriptSdk.ApprovalRuleApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
-var approvalRule = new OrderCloud.ApprovalRule(); // ApprovalRule | 
+var approvalRule = new OrdercloudJavascriptSdk.ApprovalRule(); // ApprovalRule | 
 
 
 var callback = function(error, data, response) {
@@ -124,14 +124,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.ApprovalRuleApi();
+var apiInstance = new OrdercloudJavascriptSdk.ApprovalRuleApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
@@ -176,14 +176,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.ApprovalRuleApi();
+var apiInstance = new OrdercloudJavascriptSdk.ApprovalRuleApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
@@ -239,20 +239,20 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.ApprovalRuleApi();
+var apiInstance = new OrdercloudJavascriptSdk.ApprovalRuleApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
 var approvalRuleID = "approvalRuleID_example"; // String | ID of the approval rule.
 
-var partialApprovalRule = new OrderCloud.ApprovalRule(); // ApprovalRule | 
+var partialApprovalRule = new OrdercloudJavascriptSdk.ApprovalRule(); // ApprovalRule | 
 
 
 var callback = function(error, data, response) {
@@ -294,20 +294,20 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.ApprovalRuleApi();
+var apiInstance = new OrdercloudJavascriptSdk.ApprovalRuleApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
 var approvalRuleID = "approvalRuleID_example"; // String | ID of the approval rule.
 
-var approvalRule = new OrderCloud.ApprovalRule(); // ApprovalRule | 
+var approvalRule = new OrdercloudJavascriptSdk.ApprovalRule(); // ApprovalRule | 
 
 
 var callback = function(error, data, response) {

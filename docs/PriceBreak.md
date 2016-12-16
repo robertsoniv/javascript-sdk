@@ -1,4 +1,4 @@
-# OrderCloud.PriceBreak
+# OrdercloudJavascriptSdk.PriceBreak
 
 ## Properties
 Name | Type | Description | Notes

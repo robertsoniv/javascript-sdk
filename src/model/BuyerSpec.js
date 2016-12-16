@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./SpecOption'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.BuyerSpec = factory(root.OrderCloud.ApiClient, root.OrderCloud.SpecOption);
+    root.OrdercloudJavascriptSdk.BuyerSpec = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.SpecOption);
   }
 }(this, function(ApiClient, SpecOption) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The BuyerSpec model module.
    * @module model/BuyerSpec
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

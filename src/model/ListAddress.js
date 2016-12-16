@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./Address'), require('./Meta'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ListAddress = factory(root.OrderCloud.ApiClient, root.OrderCloud.Address, root.OrderCloud.Meta);
+    root.OrdercloudJavascriptSdk.ListAddress = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.Address, root.OrdercloudJavascriptSdk.Meta);
   }
 }(this, function(ApiClient, Address, Meta) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The ListAddress model module.
    * @module model/ListAddress
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

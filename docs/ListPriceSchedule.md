@@ -1,4 +1,4 @@
-# OrderCloud.ListPriceSchedule
+# OrdercloudJavascriptSdk.ListPriceSchedule
 
 ## Properties
 Name | Type | Description | Notes

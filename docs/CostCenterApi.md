@@ -1,4 +1,4 @@
-# OrderCloud.CostCenterApi
+# OrdercloudJavascriptSdk.CostCenterApi
 
 All URIs are relative to *https://api.ordercloud.io/v1*
 
@@ -23,14 +23,14 @@ Method | HTTP request | Description
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.CostCenterApi();
+var apiInstance = new OrdercloudJavascriptSdk.CostCenterApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
@@ -75,18 +75,18 @@ null (empty response body)
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.CostCenterApi();
+var apiInstance = new OrdercloudJavascriptSdk.CostCenterApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
-var costCenter = new OrderCloud.CostCenter(); // CostCenter | 
+var costCenter = new OrdercloudJavascriptSdk.CostCenter(); // CostCenter | 
 
 
 var callback = function(error, data, response) {
@@ -127,14 +127,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.CostCenterApi();
+var apiInstance = new OrdercloudJavascriptSdk.CostCenterApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
@@ -185,14 +185,14 @@ null (empty response body)
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.CostCenterApi();
+var apiInstance = new OrdercloudJavascriptSdk.CostCenterApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
@@ -237,14 +237,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.CostCenterApi();
+var apiInstance = new OrdercloudJavascriptSdk.CostCenterApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
@@ -300,14 +300,14 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.CostCenterApi();
+var apiInstance = new OrdercloudJavascriptSdk.CostCenterApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
@@ -363,20 +363,20 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.CostCenterApi();
+var apiInstance = new OrdercloudJavascriptSdk.CostCenterApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
 var costCenterID = "costCenterID_example"; // String | ID of the cost center.
 
-var costCenter = new OrderCloud.CostCenter(); // CostCenter | 
+var costCenter = new OrdercloudJavascriptSdk.CostCenter(); // CostCenter | 
 
 
 var callback = function(error, data, response) {
@@ -418,18 +418,18 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.CostCenterApi();
+var apiInstance = new OrdercloudJavascriptSdk.CostCenterApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
-var assignment = new OrderCloud.CostCenterAssignment(); // CostCenterAssignment | 
+var assignment = new OrdercloudJavascriptSdk.CostCenterAssignment(); // CostCenterAssignment | 
 
 
 var callback = function(error, data, response) {
@@ -470,20 +470,20 @@ null (empty response body)
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.CostCenterApi();
+var apiInstance = new OrdercloudJavascriptSdk.CostCenterApi();
 
 var buyerID = "buyerID_example"; // String | ID of the buyer.
 
 var costCenterID = "costCenterID_example"; // String | ID of the cost center.
 
-var costCenter = new OrderCloud.CostCenter(); // CostCenter | 
+var costCenter = new OrdercloudJavascriptSdk.CostCenter(); // CostCenter | 
 
 
 var callback = function(error, data, response) {

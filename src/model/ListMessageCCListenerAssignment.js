@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./MessageCCListenerAssignment'), require('./Meta'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ListMessageCCListenerAssignment = factory(root.OrderCloud.ApiClient, root.OrderCloud.MessageCCListenerAssignment, root.OrderCloud.Meta);
+    root.OrdercloudJavascriptSdk.ListMessageCCListenerAssignment = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.MessageCCListenerAssignment, root.OrdercloudJavascriptSdk.Meta);
   }
 }(this, function(ApiClient, MessageCCListenerAssignment, Meta) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The ListMessageCCListenerAssignment model module.
    * @module model/ListMessageCCListenerAssignment
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

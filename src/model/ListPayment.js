@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./Meta'), require('./Payment'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ListPayment = factory(root.OrderCloud.ApiClient, root.OrderCloud.Meta, root.OrderCloud.Payment);
+    root.OrdercloudJavascriptSdk.ListPayment = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.Meta, root.OrdercloudJavascriptSdk.Payment);
   }
 }(this, function(ApiClient, Meta, Payment) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The ListPayment model module.
    * @module model/ListPayment
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./Meta'), require('./Order'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ListOrder = factory(root.OrderCloud.ApiClient, root.OrderCloud.Meta, root.OrderCloud.Order);
+    root.OrdercloudJavascriptSdk.ListOrder = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.Meta, root.OrdercloudJavascriptSdk.Order);
   }
 }(this, function(ApiClient, Meta, Order) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The ListOrder model module.
    * @module model/ListOrder
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

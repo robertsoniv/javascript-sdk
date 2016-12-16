@@ -1,4 +1,4 @@
-# OrderCloud.Category
+# OrdercloudJavascriptSdk.Category
 
 ## Properties
 Name | Type | Description | Notes

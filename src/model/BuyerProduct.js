@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./PriceSchedule'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.BuyerProduct = factory(root.OrderCloud.ApiClient, root.OrderCloud.PriceSchedule);
+    root.OrdercloudJavascriptSdk.BuyerProduct = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.PriceSchedule);
   }
 }(this, function(ApiClient, PriceSchedule) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The BuyerProduct model module.
    * @module model/BuyerProduct
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

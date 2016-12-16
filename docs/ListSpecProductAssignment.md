@@ -1,4 +1,4 @@
-# OrderCloud.ListSpecProductAssignment
+# OrdercloudJavascriptSdk.ListSpecProductAssignment
 
 ## Properties
 Name | Type | Description | Notes

@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/Catalog'), require('../model/CatalogAssignment'), require('../model/ListCatalog'), require('../model/ListCatalogAssignment'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.CatalogApi = factory(root.OrderCloud.ApiClient, root.OrderCloud.Catalog, root.OrderCloud.CatalogAssignment, root.OrderCloud.ListCatalog, root.OrderCloud.ListCatalogAssignment);
+    root.OrdercloudJavascriptSdk.CatalogApi = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.Catalog, root.OrdercloudJavascriptSdk.CatalogAssignment, root.OrdercloudJavascriptSdk.ListCatalog, root.OrdercloudJavascriptSdk.ListCatalogAssignment);
   }
 }(this, function(ApiClient, Catalog, CatalogAssignment, ListCatalog, ListCatalogAssignment) {
   'use strict';
@@ -31,7 +31,7 @@
   /**
    * Catalog service.
    * @module api/CatalogApi
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

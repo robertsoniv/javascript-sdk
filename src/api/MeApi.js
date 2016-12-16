@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/Address'), require('../model/BuyerAddress'), require('../model/BuyerCreditCard'), require('../model/BuyerProduct'), require('../model/BuyerSpec'), require('../model/CreditCard'), require('../model/ListBuyerAddress'), require('../model/ListBuyerCreditCard'), require('../model/ListBuyerProduct'), require('../model/ListBuyerSpec'), require('../model/ListCategory'), require('../model/ListCostCenter'), require('../model/ListOrder'), require('../model/ListPromotion'), require('../model/ListSpendingAccount'), require('../model/ListUserGroup'), require('../model/Order'), require('../model/Promotion'), require('../model/SpendingAccount'), require('../model/User'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.MeApi = factory(root.OrderCloud.ApiClient, root.OrderCloud.Address, root.OrderCloud.BuyerAddress, root.OrderCloud.BuyerCreditCard, root.OrderCloud.BuyerProduct, root.OrderCloud.BuyerSpec, root.OrderCloud.CreditCard, root.OrderCloud.ListBuyerAddress, root.OrderCloud.ListBuyerCreditCard, root.OrderCloud.ListBuyerProduct, root.OrderCloud.ListBuyerSpec, root.OrderCloud.ListCategory, root.OrderCloud.ListCostCenter, root.OrderCloud.ListOrder, root.OrderCloud.ListPromotion, root.OrderCloud.ListSpendingAccount, root.OrderCloud.ListUserGroup, root.OrderCloud.Order, root.OrderCloud.Promotion, root.OrderCloud.SpendingAccount, root.OrderCloud.User);
+    root.OrdercloudJavascriptSdk.MeApi = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.Address, root.OrdercloudJavascriptSdk.BuyerAddress, root.OrdercloudJavascriptSdk.BuyerCreditCard, root.OrdercloudJavascriptSdk.BuyerProduct, root.OrdercloudJavascriptSdk.BuyerSpec, root.OrdercloudJavascriptSdk.CreditCard, root.OrdercloudJavascriptSdk.ListBuyerAddress, root.OrdercloudJavascriptSdk.ListBuyerCreditCard, root.OrdercloudJavascriptSdk.ListBuyerProduct, root.OrdercloudJavascriptSdk.ListBuyerSpec, root.OrdercloudJavascriptSdk.ListCategory, root.OrdercloudJavascriptSdk.ListCostCenter, root.OrdercloudJavascriptSdk.ListOrder, root.OrdercloudJavascriptSdk.ListPromotion, root.OrdercloudJavascriptSdk.ListSpendingAccount, root.OrdercloudJavascriptSdk.ListUserGroup, root.OrdercloudJavascriptSdk.Order, root.OrdercloudJavascriptSdk.Promotion, root.OrdercloudJavascriptSdk.SpendingAccount, root.OrdercloudJavascriptSdk.User);
   }
 }(this, function(ApiClient, Address, BuyerAddress, BuyerCreditCard, BuyerProduct, BuyerSpec, CreditCard, ListBuyerAddress, ListBuyerCreditCard, ListBuyerProduct, ListBuyerSpec, ListCategory, ListCostCenter, ListOrder, ListPromotion, ListSpendingAccount, ListUserGroup, Order, Promotion, SpendingAccount, User) {
   'use strict';
@@ -31,7 +31,7 @@
   /**
    * Me service.
    * @module api/MeApi
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

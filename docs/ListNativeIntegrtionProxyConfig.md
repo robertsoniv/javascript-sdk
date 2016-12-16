@@ -1,4 +1,4 @@
-# OrderCloud.ListNativeIntegrtionProxyConfig
+# OrdercloudJavascriptSdk.ListNativeIntegrtionProxyConfig
 
 ## Properties
 Name | Type | Description | Notes

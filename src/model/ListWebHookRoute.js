@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./Meta'), require('./WebHookRoute'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ListWebHookRoute = factory(root.OrderCloud.ApiClient, root.OrderCloud.Meta, root.OrderCloud.WebHookRoute);
+    root.OrdercloudJavascriptSdk.ListWebHookRoute = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.Meta, root.OrdercloudJavascriptSdk.WebHookRoute);
   }
 }(this, function(ApiClient, Meta, WebHookRoute) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The ListWebHookRoute model module.
    * @module model/ListWebHookRoute
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

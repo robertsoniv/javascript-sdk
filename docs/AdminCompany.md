@@ -1,4 +1,4 @@
-# OrderCloud.AdminCompany
+# OrdercloudJavascriptSdk.AdminCompany
 
 ## Properties
 Name | Type | Description | Notes

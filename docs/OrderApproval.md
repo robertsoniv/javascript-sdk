@@ -1,4 +1,4 @@
-# OrderCloud.OrderApproval
+# OrdercloudJavascriptSdk.OrderApproval
 
 ## Properties
 Name | Type | Description | Notes

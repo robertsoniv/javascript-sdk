@@ -1,4 +1,4 @@
-# OrderCloud.WebHook
+# OrdercloudJavascriptSdk.WebHook
 
 ## Properties
 Name | Type | Description | Notes

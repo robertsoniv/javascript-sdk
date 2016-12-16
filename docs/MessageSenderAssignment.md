@@ -1,4 +1,4 @@
-# OrderCloud.MessageSenderAssignment
+# OrdercloudJavascriptSdk.MessageSenderAssignment
 
 ## Properties
 Name | Type | Description | Notes

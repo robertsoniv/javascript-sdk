@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./ApprovalRule'), require('./Meta'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ListApprovalRule = factory(root.OrderCloud.ApiClient, root.OrderCloud.ApprovalRule, root.OrderCloud.Meta);
+    root.OrdercloudJavascriptSdk.ListApprovalRule = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.ApprovalRule, root.OrdercloudJavascriptSdk.Meta);
   }
 }(this, function(ApiClient, ApprovalRule, Meta) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The ListApprovalRule model module.
    * @module model/ListApprovalRule
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

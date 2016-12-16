@@ -14,24 +14,24 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/ListSpec', 'model/ListSpecOption', 'model/ListSpecProductAssignment', 'model/Spec', 'model/SpecOption', 'model/SpecProductAssignment', 'model/Task'], factory);
+    define(['ApiClient', 'model/ListSpec', 'model/ListSpecOption', 'model/ListSpecProductAssignment', 'model/Spec', 'model/SpecOption', 'model/SpecProductAssignment'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/ListSpec'), require('../model/ListSpecOption'), require('../model/ListSpecProductAssignment'), require('../model/Spec'), require('../model/SpecOption'), require('../model/SpecProductAssignment'), require('../model/Task'));
+    module.exports = factory(require('../ApiClient'), require('../model/ListSpec'), require('../model/ListSpecOption'), require('../model/ListSpecProductAssignment'), require('../model/Spec'), require('../model/SpecOption'), require('../model/SpecProductAssignment'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.SpecApi = factory(root.OrderCloud.ApiClient, root.OrderCloud.ListSpec, root.OrderCloud.ListSpecOption, root.OrderCloud.ListSpecProductAssignment, root.OrderCloud.Spec, root.OrderCloud.SpecOption, root.OrderCloud.SpecProductAssignment, root.OrderCloud.Task);
+    root.OrdercloudJavascriptSdk.SpecApi = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.ListSpec, root.OrdercloudJavascriptSdk.ListSpecOption, root.OrdercloudJavascriptSdk.ListSpecProductAssignment, root.OrdercloudJavascriptSdk.Spec, root.OrdercloudJavascriptSdk.SpecOption, root.OrdercloudJavascriptSdk.SpecProductAssignment);
   }
-}(this, function(ApiClient, ListSpec, ListSpecOption, ListSpecProductAssignment, Spec, SpecOption, SpecProductAssignment, Task) {
+}(this, function(ApiClient, ListSpec, ListSpecOption, ListSpecProductAssignment, Spec, SpecOption, SpecProductAssignment) {
   'use strict';
 
   /**
    * Spec service.
    * @module api/SpecApi
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**
@@ -49,14 +49,13 @@
      * Callback function to receive the result of the callDelete operation.
      * @callback module:api/SpecApi~callDeleteCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/Task} data The data returned by the service call.
+     * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * @param {String} specID ID of the spec.
      * @param {module:api/SpecApi~callDeleteCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/Task}
      */
     this.callDelete = function(specID, callback) {
       var postBody = null;
@@ -80,7 +79,7 @@
       var authNames = ['oauth2'];
       var contentTypes = ['application/json', 'text/plain; charset=utf-8'];
       var accepts = ['application/json'];
-      var returnType = Task;
+      var returnType = null;
 
       return this.apiClient.callApi(
         '/specs/{specID}', 'DELETE',
@@ -186,7 +185,7 @@
      * Callback function to receive the result of the deleteOption operation.
      * @callback module:api/SpecApi~deleteOptionCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/Task} data The data returned by the service call.
+     * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
      */
 
@@ -194,7 +193,6 @@
      * @param {String} specID ID of the spec.
      * @param {String} optionID ID of the option.
      * @param {module:api/SpecApi~deleteOptionCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/Task}
      */
     this.deleteOption = function(specID, optionID, callback) {
       var postBody = null;
@@ -224,7 +222,7 @@
       var authNames = ['oauth2'];
       var contentTypes = ['application/json', 'text/plain; charset=utf-8'];
       var accepts = ['application/json'];
-      var returnType = Task;
+      var returnType = null;
 
       return this.apiClient.callApi(
         '/specs/{specID}/options/{optionID}', 'DELETE',
@@ -237,7 +235,7 @@
      * Callback function to receive the result of the deleteProductAssignment operation.
      * @callback module:api/SpecApi~deleteProductAssignmentCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/Task} data The data returned by the service call.
+     * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
      */
 
@@ -245,7 +243,6 @@
      * @param {String} specID ID of the spec.
      * @param {String} productID ID of the product.
      * @param {module:api/SpecApi~deleteProductAssignmentCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/Task}
      */
     this.deleteProductAssignment = function(specID, productID, callback) {
       var postBody = null;
@@ -275,7 +272,7 @@
       var authNames = ['oauth2'];
       var contentTypes = ['application/json', 'text/plain; charset=utf-8'];
       var accepts = ['application/json'];
-      var returnType = Task;
+      var returnType = null;
 
       return this.apiClient.callApi(
         '/specs/{specID}/productassignments/{productID}', 'DELETE',
@@ -646,14 +643,13 @@
      * Callback function to receive the result of the saveProductAssignment operation.
      * @callback module:api/SpecApi~saveProductAssignmentCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/Task} data The data returned by the service call.
+     * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * @param {module:model/SpecProductAssignment} productAssignment 
      * @param {module:api/SpecApi~saveProductAssignmentCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/Task}
      */
     this.saveProductAssignment = function(productAssignment, callback) {
       var postBody = productAssignment;
@@ -676,7 +672,7 @@
       var authNames = ['oauth2'];
       var contentTypes = ['application/json', 'text/plain; charset=utf-8'];
       var accepts = ['application/json'];
-      var returnType = Task;
+      var returnType = null;
 
       return this.apiClient.callApi(
         '/specs/productassignments', 'POST',

@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/Buyer'), require('../model/ListBuyer'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.BuyerApi = factory(root.OrderCloud.ApiClient, root.OrderCloud.Buyer, root.OrderCloud.ListBuyer);
+    root.OrdercloudJavascriptSdk.BuyerApi = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.Buyer, root.OrdercloudJavascriptSdk.ListBuyer);
   }
 }(this, function(ApiClient, Buyer, ListBuyer) {
   'use strict';
@@ -31,7 +31,7 @@
   /**
    * Buyer service.
    * @module api/BuyerApi
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

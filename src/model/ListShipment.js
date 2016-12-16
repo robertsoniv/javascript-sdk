@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./Meta'), require('./Shipment'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ListShipment = factory(root.OrderCloud.ApiClient, root.OrderCloud.Meta, root.OrderCloud.Shipment);
+    root.OrdercloudJavascriptSdk.ListShipment = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.Meta, root.OrdercloudJavascriptSdk.Shipment);
   }
 }(this, function(ApiClient, Meta, Shipment) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The ListShipment model module.
    * @module model/ListShipment
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

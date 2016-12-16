@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/Address'), require('../model/ListAddress'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.AdminAddressApi = factory(root.OrderCloud.ApiClient, root.OrderCloud.Address, root.OrderCloud.ListAddress);
+    root.OrdercloudJavascriptSdk.AdminAddressApi = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.Address, root.OrdercloudJavascriptSdk.ListAddress);
   }
 }(this, function(ApiClient, Address, ListAddress) {
   'use strict';
@@ -31,7 +31,7 @@
   /**
    * AdminAddress service.
    * @module api/AdminAddressApi
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

@@ -1,4 +1,4 @@
-# OrderCloud.UserGroup
+# OrdercloudJavascriptSdk.UserGroup
 
 ## Properties
 Name | Type | Description | Notes

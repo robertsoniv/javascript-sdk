@@ -1,4 +1,4 @@
-# OrderCloud.Catalog
+# OrdercloudJavascriptSdk.Catalog
 
 ## Properties
 Name | Type | Description | Notes

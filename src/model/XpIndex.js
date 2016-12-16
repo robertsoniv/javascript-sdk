@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.XpIndex = factory(root.OrderCloud.ApiClient);
+    root.OrdercloudJavascriptSdk.XpIndex = factory(root.OrdercloudJavascriptSdk.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The XpIndex model module.
    * @module model/XpIndex
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

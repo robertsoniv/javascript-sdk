@@ -14,24 +14,24 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/Address', 'model/ListOrder', 'model/ListOrderApproval', 'model/ListOrderPromotion', 'model/ListUser', 'model/Order', 'model/Promotion', 'model/Shipment', 'model/Task'], factory);
+    define(['ApiClient', 'model/Address', 'model/ListOrder', 'model/ListOrderApproval', 'model/ListOrderPromotion', 'model/ListUser', 'model/Order', 'model/Promotion', 'model/Shipment'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/Address'), require('../model/ListOrder'), require('../model/ListOrderApproval'), require('../model/ListOrderPromotion'), require('../model/ListUser'), require('../model/Order'), require('../model/Promotion'), require('../model/Shipment'), require('../model/Task'));
+    module.exports = factory(require('../ApiClient'), require('../model/Address'), require('../model/ListOrder'), require('../model/ListOrderApproval'), require('../model/ListOrderPromotion'), require('../model/ListUser'), require('../model/Order'), require('../model/Promotion'), require('../model/Shipment'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.OrderApi = factory(root.OrderCloud.ApiClient, root.OrderCloud.Address, root.OrderCloud.ListOrder, root.OrderCloud.ListOrderApproval, root.OrderCloud.ListOrderPromotion, root.OrderCloud.ListUser, root.OrderCloud.Order, root.OrderCloud.Promotion, root.OrderCloud.Shipment, root.OrderCloud.Task);
+    root.OrdercloudJavascriptSdk.OrderApi = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.Address, root.OrdercloudJavascriptSdk.ListOrder, root.OrdercloudJavascriptSdk.ListOrderApproval, root.OrdercloudJavascriptSdk.ListOrderPromotion, root.OrdercloudJavascriptSdk.ListUser, root.OrdercloudJavascriptSdk.Order, root.OrdercloudJavascriptSdk.Promotion, root.OrdercloudJavascriptSdk.Shipment);
   }
-}(this, function(ApiClient, Address, ListOrder, ListOrderApproval, ListOrderPromotion, ListUser, Order, Promotion, Shipment, Task) {
+}(this, function(ApiClient, Address, ListOrder, ListOrderApproval, ListOrderPromotion, ListUser, Order, Promotion, Shipment) {
   'use strict';
 
   /**
    * Order service.
    * @module api/OrderApi
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**
@@ -162,7 +162,7 @@
      * Callback function to receive the result of the callDelete operation.
      * @callback module:api/OrderApi~callDeleteCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/Task} data The data returned by the service call.
+     * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
      */
 
@@ -170,7 +170,6 @@
      * @param {String} buyerID ID of the buyer.
      * @param {String} orderID ID of the order.
      * @param {module:api/OrderApi~callDeleteCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/Task}
      */
     this.callDelete = function(buyerID, orderID, callback) {
       var postBody = null;
@@ -200,7 +199,7 @@
       var authNames = ['oauth2'];
       var contentTypes = ['application/json', 'text/plain; charset=utf-8'];
       var accepts = ['application/json'];
-      var returnType = Task;
+      var returnType = null;
 
       return this.apiClient.callApi(
         '/buyers/{buyerID}/orders/{orderID}', 'DELETE',

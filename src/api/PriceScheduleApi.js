@@ -14,24 +14,24 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/ListPriceSchedule', 'model/PriceBreak', 'model/PriceSchedule', 'model/Task'], factory);
+    define(['ApiClient', 'model/ListPriceSchedule', 'model/PriceBreak', 'model/PriceSchedule'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/ListPriceSchedule'), require('../model/PriceBreak'), require('../model/PriceSchedule'), require('../model/Task'));
+    module.exports = factory(require('../ApiClient'), require('../model/ListPriceSchedule'), require('../model/PriceBreak'), require('../model/PriceSchedule'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.PriceScheduleApi = factory(root.OrderCloud.ApiClient, root.OrderCloud.ListPriceSchedule, root.OrderCloud.PriceBreak, root.OrderCloud.PriceSchedule, root.OrderCloud.Task);
+    root.OrdercloudJavascriptSdk.PriceScheduleApi = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.ListPriceSchedule, root.OrdercloudJavascriptSdk.PriceBreak, root.OrdercloudJavascriptSdk.PriceSchedule);
   }
-}(this, function(ApiClient, ListPriceSchedule, PriceBreak, PriceSchedule, Task) {
+}(this, function(ApiClient, ListPriceSchedule, PriceBreak, PriceSchedule) {
   'use strict';
 
   /**
    * PriceSchedule service.
    * @module api/PriceScheduleApi
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**
@@ -49,14 +49,13 @@
      * Callback function to receive the result of the callDelete operation.
      * @callback module:api/PriceScheduleApi~callDeleteCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/Task} data The data returned by the service call.
+     * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * @param {String} priceScheduleID ID of the price schedule.
      * @param {module:api/PriceScheduleApi~callDeleteCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/Task}
      */
     this.callDelete = function(priceScheduleID, callback) {
       var postBody = null;
@@ -80,7 +79,7 @@
       var authNames = ['oauth2'];
       var contentTypes = ['application/json', 'text/plain; charset=utf-8'];
       var accepts = ['application/json'];
-      var returnType = Task;
+      var returnType = null;
 
       return this.apiClient.callApi(
         '/priceschedules/{priceScheduleID}', 'DELETE',
@@ -136,7 +135,7 @@
      * Callback function to receive the result of the deletePriceBreak operation.
      * @callback module:api/PriceScheduleApi~deletePriceBreakCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/Task} data The data returned by the service call.
+     * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
      */
 
@@ -144,7 +143,6 @@
      * @param {String} priceScheduleID ID of the price schedule.
      * @param {Number} quantity Quantity of the price schedule.
      * @param {module:api/PriceScheduleApi~deletePriceBreakCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/Task}
      */
     this.deletePriceBreak = function(priceScheduleID, quantity, callback) {
       var postBody = null;
@@ -174,7 +172,7 @@
       var authNames = ['oauth2'];
       var contentTypes = ['application/json', 'text/plain; charset=utf-8'];
       var accepts = ['application/json'];
-      var returnType = Task;
+      var returnType = null;
 
       return this.apiClient.callApi(
         '/priceschedules/{priceScheduleID}/PriceBreaks', 'DELETE',

@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./LineItem'), require('./Meta'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ListLineItem = factory(root.OrderCloud.ApiClient, root.OrderCloud.LineItem, root.OrderCloud.Meta);
+    root.OrdercloudJavascriptSdk.ListLineItem = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.LineItem, root.OrdercloudJavascriptSdk.Meta);
   }
 }(this, function(ApiClient, LineItem, Meta) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The ListLineItem model module.
    * @module model/ListLineItem
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

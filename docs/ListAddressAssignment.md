@@ -1,4 +1,4 @@
-# OrderCloud.ListAddressAssignment
+# OrdercloudJavascriptSdk.ListAddressAssignment
 
 ## Properties
 Name | Type | Description | Notes

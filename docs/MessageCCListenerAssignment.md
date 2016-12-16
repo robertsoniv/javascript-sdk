@@ -1,4 +1,4 @@
-# OrderCloud.MessageCCListenerAssignment
+# OrdercloudJavascriptSdk.MessageCCListenerAssignment
 
 ## Properties
 Name | Type | Description | Notes

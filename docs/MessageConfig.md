@@ -1,4 +1,4 @@
-# OrderCloud.MessageConfig
+# OrdercloudJavascriptSdk.MessageConfig
 
 ## Properties
 Name | Type | Description | Notes

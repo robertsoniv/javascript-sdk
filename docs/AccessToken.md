@@ -1,4 +1,4 @@
-# OrderCloud.AccessToken
+# OrdercloudJavascriptSdk.AccessToken
 
 ## Properties
 Name | Type | Description | Notes

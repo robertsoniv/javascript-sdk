@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/Category'), require('../model/CategoryAssignment'), require('../model/CategoryProductAssignment'), require('../model/ListCategory'), require('../model/ListCategoryAssignment'), require('../model/ListCategoryProductAssignment'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.CategoryApi = factory(root.OrderCloud.ApiClient, root.OrderCloud.Category, root.OrderCloud.CategoryAssignment, root.OrderCloud.CategoryProductAssignment, root.OrderCloud.ListCategory, root.OrderCloud.ListCategoryAssignment, root.OrderCloud.ListCategoryProductAssignment);
+    root.OrdercloudJavascriptSdk.CategoryApi = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.Category, root.OrdercloudJavascriptSdk.CategoryAssignment, root.OrdercloudJavascriptSdk.CategoryProductAssignment, root.OrdercloudJavascriptSdk.ListCategory, root.OrdercloudJavascriptSdk.ListCategoryAssignment, root.OrdercloudJavascriptSdk.ListCategoryProductAssignment);
   }
 }(this, function(ApiClient, Category, CategoryAssignment, CategoryProductAssignment, ListCategory, ListCategoryAssignment, ListCategoryProductAssignment) {
   'use strict';
@@ -31,7 +31,7 @@
   /**
    * Category service.
    * @module api/CategoryApi
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

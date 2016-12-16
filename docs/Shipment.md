@@ -1,4 +1,4 @@
-# OrderCloud.Shipment
+# OrdercloudJavascriptSdk.Shipment
 
 ## Properties
 Name | Type | Description | Notes

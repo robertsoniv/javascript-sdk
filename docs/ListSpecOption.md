@@ -1,4 +1,4 @@
-# OrderCloud.ListSpecOption
+# OrdercloudJavascriptSdk.ListSpecOption
 
 ## Properties
 Name | Type | Description | Notes

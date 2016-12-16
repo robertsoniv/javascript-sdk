@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./BuyerAddress'), require('./Meta'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ListBuyerAddress = factory(root.OrderCloud.ApiClient, root.OrderCloud.BuyerAddress, root.OrderCloud.Meta);
+    root.OrdercloudJavascriptSdk.ListBuyerAddress = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.BuyerAddress, root.OrdercloudJavascriptSdk.Meta);
   }
 }(this, function(ApiClient, BuyerAddress, Meta) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The ListBuyerAddress model module.
    * @module model/ListBuyerAddress
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

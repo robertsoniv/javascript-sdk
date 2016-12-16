@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/ListSecurityProfile'), require('../model/ListSecurityProfileAssignment'), require('../model/SecurityProfile'), require('../model/SecurityProfileAssignment'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.SecurityProfileApi = factory(root.OrderCloud.ApiClient, root.OrderCloud.ListSecurityProfile, root.OrderCloud.ListSecurityProfileAssignment, root.OrderCloud.SecurityProfile, root.OrderCloud.SecurityProfileAssignment);
+    root.OrdercloudJavascriptSdk.SecurityProfileApi = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.ListSecurityProfile, root.OrdercloudJavascriptSdk.ListSecurityProfileAssignment, root.OrdercloudJavascriptSdk.SecurityProfile, root.OrdercloudJavascriptSdk.SecurityProfileAssignment);
   }
 }(this, function(ApiClient, ListSecurityProfile, ListSecurityProfileAssignment, SecurityProfile, SecurityProfileAssignment) {
   'use strict';
@@ -31,7 +31,7 @@
   /**
    * SecurityProfile service.
    * @module api/SecurityProfileApi
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

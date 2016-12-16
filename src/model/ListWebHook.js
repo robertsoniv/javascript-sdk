@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./Meta'), require('./WebHook'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ListWebHook = factory(root.OrderCloud.ApiClient, root.OrderCloud.Meta, root.OrderCloud.WebHook);
+    root.OrdercloudJavascriptSdk.ListWebHook = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.Meta, root.OrdercloudJavascriptSdk.WebHook);
   }
 }(this, function(ApiClient, Meta, WebHook) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The ListWebHook model module.
    * @module model/ListWebHook
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

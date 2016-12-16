@@ -1,4 +1,4 @@
-# OrderCloud.PasswordResetApi
+# OrdercloudJavascriptSdk.PasswordResetApi
 
 All URIs are relative to *https://api.ordercloud.io/v1*
 
@@ -16,18 +16,18 @@ Method | HTTP request | Description
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.PasswordResetApi();
+var apiInstance = new OrdercloudJavascriptSdk.PasswordResetApi();
 
 var verificationCode = "verificationCode_example"; // String | Verification code of the forgotten password.
 
-var passwordReset = new OrderCloud.PasswordReset(); // PasswordReset | 
+var passwordReset = new OrdercloudJavascriptSdk.PasswordReset(); // PasswordReset | 
 
 
 var callback = function(error, data, response) {
@@ -68,16 +68,16 @@ null (empty response body)
 
 ### Example
 ```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.default;
+var OrdercloudJavascriptSdk = require('ordercloud-javascript-sdk');
+var defaultClient = OrdercloudJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new OrderCloud.PasswordResetApi();
+var apiInstance = new OrdercloudJavascriptSdk.PasswordResetApi();
 
-var passwordResetRequest = new OrderCloud.PasswordResetRequest(); // PasswordResetRequest | 
+var passwordResetRequest = new OrdercloudJavascriptSdk.PasswordResetRequest(); // PasswordResetRequest | 
 
 
 var callback = function(error, data, response) {

@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/AccessToken'), require('../model/ImpersonateTokenRequest'), require('../model/ListUser'), require('../model/User'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.UserApi = factory(root.OrderCloud.ApiClient, root.OrderCloud.AccessToken, root.OrderCloud.ImpersonateTokenRequest, root.OrderCloud.ListUser, root.OrderCloud.User);
+    root.OrdercloudJavascriptSdk.UserApi = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.AccessToken, root.OrdercloudJavascriptSdk.ImpersonateTokenRequest, root.OrdercloudJavascriptSdk.ListUser, root.OrdercloudJavascriptSdk.User);
   }
 }(this, function(ApiClient, AccessToken, ImpersonateTokenRequest, ListUser, User) {
   'use strict';
@@ -31,7 +31,7 @@
   /**
    * User service.
    * @module api/UserApi
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

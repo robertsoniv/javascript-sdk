@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('./UsageOrganization'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.Usage = factory(root.OrderCloud.ApiClient, root.OrderCloud.UsageOrganization);
+    root.OrdercloudJavascriptSdk.Usage = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.UsageOrganization);
   }
 }(this, function(ApiClient, UsageOrganization) {
   'use strict';
@@ -34,7 +34,7 @@
   /**
    * The Usage model module.
    * @module model/Usage
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

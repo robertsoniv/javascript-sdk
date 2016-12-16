@@ -20,17 +20,17 @@
     module.exports = factory(require('superagent'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.ApiClient = factory(root.superagent);
+    root.OrdercloudJavascriptSdk.ApiClient = factory(root.superagent);
   }
 }(this, function(superagent) {
   'use strict';
 
   /**
    * @module ApiClient
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

@@ -20,10 +20,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/CostCenter'), require('../model/CostCenterAssignment'), require('../model/ListCostCenter'), require('../model/ListCostCenterAssignment'));
   } else {
     // Browser globals (root is window)
-    if (!root.OrderCloud) {
-      root.OrderCloud = {};
+    if (!root.OrdercloudJavascriptSdk) {
+      root.OrdercloudJavascriptSdk = {};
     }
-    root.OrderCloud.CostCenterApi = factory(root.OrderCloud.ApiClient, root.OrderCloud.CostCenter, root.OrderCloud.CostCenterAssignment, root.OrderCloud.ListCostCenter, root.OrderCloud.ListCostCenterAssignment);
+    root.OrdercloudJavascriptSdk.CostCenterApi = factory(root.OrdercloudJavascriptSdk.ApiClient, root.OrdercloudJavascriptSdk.CostCenter, root.OrdercloudJavascriptSdk.CostCenterAssignment, root.OrdercloudJavascriptSdk.ListCostCenter, root.OrdercloudJavascriptSdk.ListCostCenterAssignment);
   }
 }(this, function(ApiClient, CostCenter, CostCenterAssignment, ListCostCenter, ListCostCenterAssignment) {
   'use strict';
@@ -31,7 +31,7 @@
   /**
    * CostCenter service.
    * @module api/CostCenterApi
-   * @version 1.0
+   * @version 1.0.0
    */
 
   /**

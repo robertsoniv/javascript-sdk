@@ -1,4 +1,4 @@
-# OrderCloud.CatalogAssignment
+# OrdercloudJavascriptSdk.CatalogAssignment
 
 ## Properties
 Name | Type | Description | Notes

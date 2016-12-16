@@ -1,4 +1,4 @@
-# OrderCloud.StripeCreditCard
+# OrdercloudJavascriptSdk.StripeCreditCard
 
 ## Properties
 Name | Type | Description | Notes
